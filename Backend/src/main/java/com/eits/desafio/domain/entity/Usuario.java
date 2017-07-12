@@ -3,7 +3,6 @@ package com.eits.desafio.domain.entity;
 import java.time.LocalDate;
 import java.util.Collection;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -20,12 +19,17 @@ import javax.persistence.Transient;
 import org.directwebremoting.annotations.DataTransferObject;
 import org.hibernate.envers.AuditTable;
 import org.hibernate.envers.Audited;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.util.Converter;
 
 @Entity
 @Table(name = "usuario")
@@ -47,7 +51,7 @@ public class Usuario implements UserDetails
 	 * 
 	 */
 	
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private String nome;
 	
 	/**
@@ -122,16 +126,19 @@ public class Usuario implements UserDetails
 	 */
 	
 	//Ultimo alterador do usuario
-	@JoinColumn(name = "ultimo_alterador")
-	@ManyToOne(fetch= FetchType.EAGER)
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "ultimo_alterador_id")
 	private Usuario ultimoAlterador;
 	
 	/**
+	 * 
+	 * 
 	 * 
 	 */
 	
 	//Usuario que cadastrou o usuario
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "criador_id")
 	private Usuario criador;
 	
 	/**
@@ -140,7 +147,6 @@ public class Usuario implements UserDetails
 	
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
-	
 	private Permissoes permissoes;
 	
 	
@@ -149,9 +155,8 @@ public class Usuario implements UserDetails
 	 * 
 	 * contructor
 	 */
-	public void constructor(Usuario usuario)
+	public Usuario()
 	{
-		usuario = new Usuario();
 	}
 	
 	/**
@@ -298,6 +303,7 @@ public class Usuario implements UserDetails
 	 */
 	
 	@JsonProperty(access = Access.READ_ONLY)
+	@JsonIgnoreProperties(value={"month", "chronology", "dayOfWeek", "era", "dayOfYear", "leapYear", })
 	public LocalDate getDataCadastro() {
 		return dataCadastro;
 	}
@@ -312,6 +318,7 @@ public class Usuario implements UserDetails
 	 */
 	
 	@JsonProperty(access = Access.READ_ONLY)
+	@JsonIgnoreProperties(value={"month", "chronology", "dayOfWeek", "era", "dayOfYear", "leapYear", })
 	public LocalDate getDataAlteracao() {
 		return dataAlteracao;
 	}
@@ -386,7 +393,7 @@ public class Usuario implements UserDetails
 	 */
 
 	
-
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getUltimoAlterador() 
 	{
 		return ultimoAlterador;
@@ -401,7 +408,7 @@ public class Usuario implements UserDetails
 	 * 
 	 */
 	
-
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getCriador() 
 	{
 		return criador;

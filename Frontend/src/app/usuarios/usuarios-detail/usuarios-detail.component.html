@@ -79,7 +79,7 @@
     <md-divider></md-divider>
     <md-card-actions>
       <button *ngIf="userLogado?.permissoes == 'ADMINISTRADOR'" md-button [routerLink]="['/usuarios/edit', usuario.id]" color="accent" class="text-upper">Editar</button>
-      <button md-button [routerLink]="['/usuarios']" class="text-upper">Voltar</button>
+      <button md-button [routerLink]="['/usuarios']" [queryParams]="{page:1}" class="text-upper">Voltar</button>
     </md-card-actions>
   </md-card>
 </div>

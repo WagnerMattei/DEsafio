@@ -16,6 +16,7 @@ import javax.persistence.Table;
 import org.directwebremoting.annotations.DataTransferObject;
 import org.hibernate.envers.Audited;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
@@ -97,11 +98,11 @@ public class Transacao
 	
 	//data da ultima alteração da transação
 	@Column(name = "data_alteracao")
-	@JsonProperty(access = Access.READ_ONLY)
 	private LocalDate dataAlteracao;
 	
 	//Usuario que inseriu a transação na lista
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "criador_id")
 	private Usuario criador;	
 	
 	/**
@@ -111,8 +112,8 @@ public class Transacao
 	
 	//Usuario que alterou a transação pela ultima vez
 
-	@JoinColumn(name = "ultimo_alterador") 
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "ultimo_alterador_id")
 	private Usuario ultimoAlterador;
 	
 	/**
@@ -122,6 +123,7 @@ public class Transacao
 
 	//usuario que efetivou a transação
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "efetivador_id")
 	private Usuario efetivador;	
 	
 	/**
@@ -143,9 +145,9 @@ public class Transacao
 	 */
 	
 	
-	public void constructor (Transacao transacao)
+	public Transacao()
 	{
-		transacao = new Transacao();
+		
 	}
 	
 
@@ -174,7 +176,7 @@ public class Transacao
 	 */
 	
 
-	
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getUltimoAlterador()
 	{
 		return ultimoAlterador;
@@ -188,7 +190,7 @@ public class Transacao
 	 * 
 	 * 
 	 */
-	
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getCriador()
 	{
 		return criador;
@@ -202,7 +204,7 @@ public class Transacao
 	 * 
 	 * 
 	 */
-	
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getEfetivador()
 	{
 		return efetivador;
@@ -230,6 +232,7 @@ public class Transacao
 	 * 
 	 * 
 	 */
+	@JsonIgnoreProperties(value={"descricao", "dataCadastro", "dataAlteracao", "ultimoAlterador", "criador"})
 	public Conta getContaOrigem()
 	{
 		return contaOrigem;
@@ -243,7 +246,7 @@ public class Transacao
 	 * 
 	 * 
 	 */
-	
+	@JsonIgnoreProperties(value={"descricao", "dataCadastro", "dataAlteracao", "ultimoAlterador", "criador"})
 	public Conta getContaDestino()
 	{
 		return contaDestino;
@@ -272,7 +275,6 @@ public class Transacao
 	 * 
 	 */
 	
-	
 	public Calendar getDataVencimento()
 	{
 		return dataVencimento;
@@ -287,7 +289,7 @@ public class Transacao
 	 * 
 	 * 
 	 */
-	
+	@JsonIgnoreProperties(value={"month", "chronology", "dayOfWeek", "era", "dayOfYear", "leapYear", })
 	@JsonProperty(access = Access.READ_ONLY)
 	public LocalDate getDataCadastro() 
 	{
@@ -305,12 +307,12 @@ public class Transacao
 	 * 
 	 */
 	
-
+	@JsonIgnoreProperties(value={"month", "chronology", "dayOfWeek", "era", "dayOfYear", "leapYear", })
 	public LocalDate getDataEfetivacao() 
 	{
 		return dataEfetivacao;
 	}
-
+	@JsonProperty(access = Access.READ_ONLY)
 	public void setDataEfetivacao(LocalDate dataEfetivacao)
 	{
 		this.dataEfetivacao = dataEfetivacao;
@@ -348,6 +350,7 @@ public class Transacao
 	 * 
 	 */
 
+	@JsonIgnoreProperties(value={"month", "chronology", "dayOfWeek", "era", "dayOfYear", "leapYear", })
 	@JsonProperty(access = Access.READ_ONLY)
 	public LocalDate getDataAlteracao()
 	{

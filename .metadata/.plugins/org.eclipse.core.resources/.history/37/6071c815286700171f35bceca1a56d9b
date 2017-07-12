@@ -1,0 +1,456 @@
+package com.eits.desafio.domain.entity;
+
+import java.time.LocalDate;
+import java.util.Collection;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.directwebremoting.annotations.DataTransferObject;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+import org.hibernate.envers.AuditTable;
+import org.hibernate.envers.Audited;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
+@Entity
+@Table(name = "usuario")
+@DataTransferObject
+@Audited
+@AuditTable(value="usuario_aud")
+public class Usuario implements UserDetails 
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+ 
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false)
+	private String nome;
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false, unique = true)
+	private String cpf;	
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false)
+	private String endereco;
+	
+	/**
+	 * 
+	 */
+	
+	
+	private String celular;	
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false, unique = true)
+	private String email;	
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false)
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private String senha;
+	
+	/**
+	 * 
+	 */
+	
+	@Transient
+	private String confirmSenha;
+	
+	/**
+	 * 
+	 */
+
+	//Data de cadastro de um usuario
+	@Column(name = "data_cadastro")
+	private LocalDate dataCadastro;
+	
+	/**
+	 * 
+	 */
+	
+	//Data m que um usaurio foi alterado pela ultima vez
+	@Column(name = "data_alteracao")
+	private LocalDate dataAlteracao;
+	
+	/**
+	 * 
+	 */
+	
+	//variavel para dizer se o usuario esta ativo
+	@Column(nullable = false)
+	private boolean ativo;	
+	
+	/**
+	 * 
+	 */
+	
+	//Ultimo alterador do usuario
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "ultimo_alterador_id")
+	private Usuario ultimoAlterador;
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 */
+	
+	//Usuario que cadastrou o usuario
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "criador_id")
+	private Usuario criador;
+	
+	/**
+	 * 
+	 */
+	
+	@Column(nullable = false)
+	@Enumerated(EnumType.STRING)
+	private Permissoes permissoes;
+	
+	
+	/**
+	
+	 * 
+	 * contructor
+	 */
+	public Usuario()
+	{
+	}
+	
+	/**
+	 * 
+	 * setters e getters
+	 */
+	
+	
+	public boolean isAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+
+	/**
+	 * 
+	 */
+
+	public Permissoes getPermissoes() 
+	{
+		return permissoes;
+	}
+	
+	public void setPermissoes(Permissoes permissoes)
+	{
+		this.permissoes = permissoes;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public long getId() 
+	{
+		return id;
+	}
+	
+	public void setId(long id)
+	{
+		this.id = id;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public String getNome() 
+	{
+		return nome;
+	}
+
+	public void setNome(String nome)
+	{
+		this.nome = nome;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public String getCpf() 
+	{
+		return cpf;
+	}
+	
+	public void setCpf(String cpf) 
+	{
+		this.cpf = cpf;
+	}
+	
+	/**
+	 * 
+	 */
+
+	public String getSenha() 
+	{
+		return senha;
+	}
+	@JsonProperty(access=Access.WRITE_ONLY)
+	public void setSenha(String senha) 
+	{
+		this.senha = senha;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public String getEmail() 
+	{
+		return email;
+	}
+	
+	public void setEmail(String email)
+	{
+		this.email = email;
+	}
+	
+	/**
+	 * 
+	 */
+	public String getConfirmSenha() 
+	{
+		return confirmSenha;
+	}
+
+	public void setConfirmSenha(String confirmSenha)
+	{
+		this.confirmSenha = confirmSenha;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public String getCelular() 
+	{
+		return celular;
+	}
+	
+	public void setCelular(String celular) 
+	{
+		this.celular = celular;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	public String getEndereco()
+	{
+		return endereco;
+	}
+	
+	public void setEndereco(String endereco) 
+	{
+		this.endereco = endereco;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	@JsonProperty(access = Access.READ_ONLY)
+	public LocalDate getDataCadastro() {
+		return dataCadastro;
+	}
+
+	@JsonProperty(access = Access.READ_ONLY)
+	public void setDataCadastro(LocalDate dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	@JsonProperty(access = Access.READ_ONLY)
+	public LocalDate getDataAlteracao() {
+		return dataAlteracao;
+	}
+	
+	@JsonProperty(access = Access.READ_ONLY)
+	public void setDataAlteracao(LocalDate dataAlteracao) {
+		this.dataAlteracao = dataAlteracao;
+	}
+	
+	/**
+	 * 
+	 */
+	
+	
+	@JsonIgnore
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	@JsonIgnore
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return this.senha;
+	}
+	
+	
+	@JsonIgnore
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return this.email;
+	}
+	
+	
+	@JsonIgnore
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	
+	@JsonIgnore
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	
+	@JsonIgnore
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	@JsonIgnore
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+			
+	/**
+	 * 
+	 */
+
+	
+
+	public Usuario getUltimoAlterador() 
+	{
+		return ultimoAlterador;
+	}
+
+	public void setUltimoAlterador(Usuario ultimoAlterador)
+	{
+		this.ultimoAlterador = ultimoAlterador;
+	}
+	
+	/**
+	 * 
+	 */
+	
+
+	public Usuario getCriador() 
+	{
+		return criador;
+	}
+
+	public void setCriador(Usuario criador)
+	{
+		this.criador = criador;
+	}
+	
+	/**
+	 * Validação de CPF
+	 */
+   @Transient
+   @JsonIgnore
+   private int[] pesoCPF = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};	
+   private static int calcularDigito(String str, int[] peso) 
+   {
+      int soma = 0;
+      for (int indice=str.length()-1, digito; indice >= 0; indice-- ) 
+      {
+         digito = Integer.parseInt(str.substring(indice,indice+1));
+         soma += digito*peso[peso.length-str.length()+indice];
+      }
+      soma = 11 - soma % 11;
+      return soma > 9 ? 0 : soma;
+   }
+
+   public boolean isValidCPF(String cpf) 
+   {
+      if ((cpf==null) || (cpf.length()!=11)) return false;
+      
+
+      Integer digito1 = calcularDigito(cpf.substring(0,9), pesoCPF);
+      Integer digito2 = calcularDigito(cpf.substring(0,9) + digito1, pesoCPF);
+      return cpf.equals(cpf.substring(0,9) + digito1.toString() + digito2.toString());
+   }
+   @JsonIgnore
+   public boolean isValid()
+	{
+		if ( this.senha.equals(this.confirmSenha)) 
+		{
+			return true;
+		}
+		
+		return false;
+	}
+
+
+}

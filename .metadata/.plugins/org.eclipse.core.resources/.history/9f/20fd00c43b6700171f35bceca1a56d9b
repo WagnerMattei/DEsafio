@@ -1,0 +1,14 @@
+package com.eits.desafio.infraestructure;
+
+public class JsonIgnore 
+{
+	
+	private String[] UsuarioIgnore = new String[20];
+	
+	public void getUsuarioIgnore()
+	{
+		UsuarioIgnore[0] = "cpf";
+		UsuarioIgnore[1] = "email";
+	}
+
+}

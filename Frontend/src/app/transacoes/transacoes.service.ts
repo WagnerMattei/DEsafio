@@ -9,7 +9,7 @@ export class TransacoesService
   headers: Headers;
   headersFile: Headers;
 
-  url: String = 'http://localhost:8080/desafio/transacao';
+  url: String = '/desafio/transacao';
   constructor(public http: Http) 
   { 
     this.headers = new Headers();

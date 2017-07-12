@@ -60,8 +60,7 @@ public class UsuariosController
 	public Page<Usuario> list(@PathVariable int page, @PathVariable int size)
 	{
 		String property = "nome";
-		String order = "ASC";
-		Page<Usuario> usuario = usuarioService.list(page, size, property, order);
+		Page<Usuario> usuario = usuarioService.list(page, size, property);
 		return usuario;
 	}
 	

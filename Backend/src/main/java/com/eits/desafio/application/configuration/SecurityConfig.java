@@ -21,24 +21,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 	@Override
 	protected void configure(HttpSecurity http) throws Exception 
 	{
-		http.csrf().disable()
+		/*http.csrf().disable()
 		.authorizeRequests()
-			.antMatchers("/**").permitAll();
+			.antMatchers("/**").permitAll();*/
 		
-//		http
-//		.authorizeRequests()
-//			.anyRequest().authenticated()
-//			.and()
-//		.formLogin()
-//			.permitAll()
-//			.and()
-//		.csrf().disable()
-//		.sessionManagement();
-		
+
 		/**
 		*
 		*/
-/*		http.csrf().disable();
+		http.csrf().disable();
 		http.headers().frameOptions().disable();
 
 		http
@@ -55,8 +46,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 		.permitAll()
 		.and()
 		.logout()
-		.logoutUrl( "/logout" );*/
+		.logoutUrl( "/logout" );
+		
+		http
+        .authorizeRequests()
+        .antMatchers( "/api/**" )
+            .authenticated()
+            .and()
+                .httpBasic();
 	}
+	
 
 
 	@Override

@@ -57,7 +57,7 @@
     <md-divider></md-divider>
     <md-card-actions>
       <button md-button  [routerLink]="['/contas/edit', conta.numero]" color="accent" class="text-upper">Editar</button>
-      <button md-button [routerLink]="['/contas']" class="text-upper">Voltar</button>
+      <button md-button [routerLink]="['/contas']" [queryParams]="{page:1}" class="text-upper">Voltar</button>
     </md-card-actions>
   </md-card>
 </body>

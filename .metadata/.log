@@ -6303,3 +6303,921 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.jface.text 2 0 2017-07-12 10:17:53.019
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-07-12 10:45:35.991 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-12 11:12:43.620
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-12 11:12:43.627
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:57:01.988
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:57:01.988
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:57:03.759
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:57:03.759
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:57:31.752
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:57:31.752
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:57:31.755
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:57:31.755
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:57:36.737
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:57:36.737
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:58:07.023
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:58:07.023
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:58:20.444
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:58:20.444
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:58:29.561
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:58:29.561
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:58:45.809
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:58:45.809
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 11:58:45.844
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 11:58:45.844
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 12:03:55.121
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 12:03:55.121
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 12:04:01.662
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 12:04:01.662
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 12:07:17.480
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 12:07:17.480
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 12:07:21.888
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 12:07:21.888
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 12:07:21.907
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 12:07:21.909
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-07-12 12:51:43.151
+!MESSAGE Server Tomcat v8.5 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:01.167
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:01.167
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:17.274
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:17.275
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:21.985
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:21.985
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:40.975
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:40.975
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:46.063
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:46.063
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:49.847
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:49.847
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:17:53.857
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:17:53.857
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:03.022
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:03.022
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:06.020
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:06.020
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:13.624
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:13.624
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:19.587
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:19.588
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:26.797
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:26.797
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:28.810
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:28.810
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:30.253
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:30.253
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:32.311
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:32.311
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:35.600
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:35.600
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:38.383
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:38.383
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:40.665
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:40.665
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:43.640
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:43.640
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:55.999
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:55.999
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:18:59.251
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:18:59.251
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:09.666
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:09.666
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:11.226
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:11.226
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:14.542
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:14.542
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:16.224
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:16.224
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:18.181
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:18.181
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:20.503
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:20.503
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:21.794
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:21.794
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:22.777
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:22.777
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:26.712
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:26.712
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:29.349
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:29.349
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:30.943
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:30.943
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.180
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.180
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.610
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.610
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.810
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:32.810
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.050
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.050
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.329
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.329
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.662
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.662
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.772
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.772
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.985
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:33.985
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.171
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.171
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.352
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.352
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.542
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.542
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.765
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:34.765
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:35.044
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:35.044
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:35.864
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:35.864
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:36.114
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:36.114
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:36.344
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:36.344
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.debug 4 120 2017-07-12 14:19:38.725
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2017-07-12 14:19:38.725
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.getCompleteSnippet(EvaluationSourceGenerator.java:142)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.EvaluationSourceGenerator.<init>(EvaluationSourceGenerator.java:68)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.getCompiledExpression(ASTEvaluationEngine.java:333)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine.evaluate(ASTEvaluationEngine.java:135)
+	at org.eclipse.jdt.internal.debug.ui.JavaWatchExpressionDelegate$EvaluationRunnable.run(JavaWatchExpressionDelegate.java:150)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3341)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-12 16:47:35.743
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-12 16:47:35.744
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

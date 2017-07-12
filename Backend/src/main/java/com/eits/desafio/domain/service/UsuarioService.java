@@ -11,9 +11,9 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.eits.desafio.domain.entity.Usuario;
 import com.eits.desafio.domain.repository.IUsuariosRepository;
@@ -21,7 +21,7 @@ import com.eits.desafio.infraestructure.Mailer;
 
 @Service 
 @RemoteProxy(name = "usuarioService")
-@Transactional
+
 public class UsuarioService
 {
 	/**
@@ -91,7 +91,7 @@ public class UsuarioService
 		//Corpo do email a ser enviado
 		String email = "Obrigado por relizar o cadastro\n "+ 
 				   "Usuario: " + usuario.getEmail() +"\n"+ 
-				   "Senha: " + usuario.getPassword()+ "\n" +
+				   "Senha: '" + usuario.getPassword()+ "'\n" + "\n" +
 				   "Com permissões de "+ usuario.getPermissoes()+"\n"+
 				   "----------------------------------------";
 		String assunto = "Cadastro realizado com sucesso!";
@@ -139,7 +139,7 @@ public class UsuarioService
 	
 	//LIST//
 	// Método que retorna a lista de usuarios
-	public Page<Usuario> list(int page, int size, String property, String order) 
+	public Page<Usuario> list(int page, int size, String property) 
 	{
 		Direction asc;
 		asc = Direction.ASC;
@@ -155,6 +155,7 @@ public class UsuarioService
 	
 	//UPDATE//
 	//Método que altera um usuario
+	
 	@PreAuthorize("hasRole('ADMINISTRADOR')")
 	public ResponseEntity<String> update(Usuario usuario)
 	{
@@ -212,6 +213,7 @@ public class UsuarioService
 		user = usuariosRepository.findOne(usuario.getId());
 		usuario.setDataCadastro(user.getDataCadastro());
 		
+		
 		//Clone para que a senha do usuario nao seja alterada
 		usuario.setSenha(user.getSenha());	
 		usuariosRepository.saveAndFlush(usuario);
@@ -219,7 +221,7 @@ public class UsuarioService
 	}
 	
 	/**
-	 * 
+	 *  
 	 * @return
 	 */
 	
@@ -228,8 +230,8 @@ public class UsuarioService
 	@RemoteMethod
 	public Usuario getCurrent()
 	{
-		//Usuario userCurrent = (Usuario) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		return usuariosRepository.findByEmail("wagner.mattei@gmail.com");
+		Usuario userCurrent = (Usuario) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		return userCurrent;
 	}
 	
 	/**
@@ -264,7 +266,9 @@ public class UsuarioService
 		{
 			usuario.setAtivo(true);
 		}
-		return update(usuario);
+		
+		usuariosRepository.saveAndFlush(usuario);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Usuario salvo");
 		
 	}
 	

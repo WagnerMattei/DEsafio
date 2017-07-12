@@ -10,7 +10,7 @@ import com.eits.desafio.domain.entity.Usuario;
 public class LoginController 
 {
 
-	@RequestMapping("/Login")
+	@RequestMapping("/login")
 	public String index(@AuthenticationPrincipal Usuario usuario){
 		return "index";	
 	}

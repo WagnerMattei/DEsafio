@@ -72,7 +72,7 @@ public class TransacaoService
 		{
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Contas de Origem e Destino não podem ser as mesmas");
 		}
-		
+				
 		//A data atual do calendar está um dia atrasado, por isso a adição
 		transacao.getDataVencimento().add(Calendar.DATE, +1);
 		
@@ -194,8 +194,15 @@ public class TransacaoService
 		//Seta o usuario que efetivou com o usuario logado
 		transacao.setEfetivador(usuarioService.getCurrent());
 		
-		//Seta a date de efetivacao com a data atual do sistema
+		//Clone para que a datad e cadastro nao seja alterada
 		transacao.setDataEfetivacao(LocalDate.now());
+		
+		Transacao transacaoTemp = new Transacao();
+		transacaoTemp = transacaoRepository.findOne(transacao.getId());
+		transacao.setDataAlteracao(transacaoTemp.getDataAlteracao());
+		transacao.setDataCadastro(transacaoTemp.getDataCadastro());
+		
+		///seta a data de efetivacao
 		
 		//Atualiza as contas com o sald novo
 		contasRepository.saveAndFlush(transacao.getContaDestino());
@@ -237,6 +244,7 @@ public class TransacaoService
 
 		//remove o dia adicionado antes de dar update
 		transacao.getDataVencimento().add(Calendar.DATE, -1);
+		
 		transacaoRepository.saveAndFlush(transacao);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Transação efetivada com sucesso!");
 	}
