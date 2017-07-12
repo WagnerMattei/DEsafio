@@ -1,0 +1,15 @@
+
+
+CREATE TABLE conta (
+    numero bigint NOT NULL,
+    criador bytea,
+    data_alteracao date,
+    data_cadastro date,
+    descricao character varying(255),
+    nome character varying(255),
+    saldo double precision,
+    criador_id bigint,
+    ultimo_alterador bigint,
+    ultimoalterador bytea
+);
+

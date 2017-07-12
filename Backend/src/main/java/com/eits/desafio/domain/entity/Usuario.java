@@ -83,7 +83,7 @@ public class Usuario implements UserDetails
 	 */
 	
 	@Column(nullable = false)
-	@Basic(fetch=FetchType.LAZY)
+	@JsonProperty(access = Access.WRITE_ONLY)
 	private String senha;
 	
 	/**
@@ -123,6 +123,7 @@ public class Usuario implements UserDetails
 	
 	//Ultimo alterador do usuario
 	@JoinColumn(name = "ultimo_alterador")
+	@ManyToOne(fetch= FetchType.EAGER)
 	private Usuario ultimoAlterador;
 	
 	/**
@@ -139,6 +140,7 @@ public class Usuario implements UserDetails
 	
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
+	
 	private Permissoes permissoes;
 	
 	
