@@ -1,0 +1,23 @@
+#detalhes
+{
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    top: 10%;
+    padding: 20px;
+}
+
+md-card
+{
+    border-radius: 5px;
+
+}
+
+.download
+{
+    width: 25%;
+
+}

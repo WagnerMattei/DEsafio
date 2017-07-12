@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.directwebremoting.org/schema/spring-dwr"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.directwebremoting.org/schema/spring-dwr http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd">
+	
+	<annotation-config id="dwrAnnotationConfig" />
+	<annotation-scan base-package="com.stockontrol.domain.entity" scanDataTransferObject="true" scanRemoteProxy="false"/>
+	
+	<configuration>
+		<convert class="java.lang.Exception" type="exception" />
+		<convert class="java.lang.StackTraceElement" type="bean" />
+	</configuration>
+</beans:beans>

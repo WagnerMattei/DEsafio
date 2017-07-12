@@ -1,0 +1,96 @@
+
+<body id="detalhes">
+  <md-card>
+    <md-card-title>Detalhes da transaçao {{transacao.id}}</md-card-title>
+    <md-divider></md-divider>
+    <md-list>
+      <h3 md-subheader>Dados da Transação</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>attach_money</md-icon>
+          <h4 md-line>R$ {{transacao.valor | number:'.2-2'}}</h4>
+          <p md-line>Valor</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>file_download</md-icon>
+          <h4 md-line *ngIf="!transacao.filePath">Sem comprovante</h4>
+          <h4 md-line>{{transacao.filePath}}</h4> <button *ngIf="transacao.filePath" (click)="download(transacao)"class="download" md-line md-button color="accent">Download de comprovante</button>
+          <p md-line>Comprovante de transação</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+
+          <md-icon md-list-avatar>description</md-icon>
+          <h4 md-line>{{transacao.descricao}}</h4>
+          <p md-line>Descrição</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>vpn_key</md-icon>
+          <h4 md-line>{{transacao.id}}</h4>
+          <p md-line>ID</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>credit_card</md-icon>
+          <h4 md-line>{{transacao?.contaOrigem?.nome}}</h4>
+          <p md-line>Conta de origem</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>credit_card</md-icon>
+          <h4 md-line>{{ transacao?.contaDestino?.nome }}</h4>
+          <p md-line>Conta de destino</p>
+      </md-list-item>
+      <md-divider></md-divider>
+    
+      <h3 md-subheader>Criação/Alteração</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{transacao?.dataCadastro?.dayOfMonth}}/{{transacao?.dataCadastro?.monthValue}}/{{transacao?.dataCadastro?.year}}</h4>
+          <p md-line>Data de Cadastro</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{ transacao.dataVencimento | date: 'dd'}}/{{transacao.dataVencimento | date:'MM'}}/{{transacao.dataVencimento | date: 'yyyy'}}</h4>
+          <p md-line>Data de Vencimento</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{transacao?.dataAlteracao?.dayOfMonth}}/{{transacao?.dataAlteracao?.monthValue}}/{{transacao?.dataAlteracao?.year}}</h4>
+          <p md-line>Data da última Alteração</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{transacao?.dataEfetivacao?.dayOfMonth}}/{{transacao?.dataEfetivacao?.monthValue}}/{{transacao?.dataEfetivacao?.year}}</h4>
+          <p md-line>Data de Efetivação</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{transacao?.criador?.nome}}</h4>
+          <p md-line>Criado por:</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{transacao?.ultimoAlterador?.nome}}</h4>
+          <p md-line>Alterado por:</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{transacao?.efetivador?.nome}}</h4>
+          <p md-line>Efetivado por:</p>
+      </md-list-item>
+    </md-list>
+    <md-divider></md-divider>
+    <md-card-actions>
+      <button md-button [routerLink]="['/transacoes/edit', transacao.id]" color="accent" class="text-upper">Editar</button>
+      <button md-button [routerLink]="['/transacoes']" class="text-upper">Voltar</button>
+    </md-card-actions>
+  </md-card>
+</body>

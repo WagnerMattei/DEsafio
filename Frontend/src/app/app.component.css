@@ -1,0 +1,67 @@
+body
+{
+  background-color: #dbd0d0;
+  height: 100%;
+ 
+}
+
+
+
+.toolbar
+{
+  box-shadow: 1px 1px 1px black;
+  position: fixed;
+  z-index: 1;
+}
+
+.example-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+
+
+}
+
+.example-sidenav {
+  padding: 20px;
+  overflow-x: hidden;
+  top: 65px;
+}
+
+.botao-sair{
+  position: relative;
+  left:77%; 
+
+
+   
+}
+
+
+
+.botao-lateral{
+  position: relative;
+  top: -20px;
+  left: -20px;
+  width: 115%;
+  height: 70px;
+  background-color: white;
+  border-style: none;
+  color: black
+  
+}
+
+.botao-lateral:hover{
+  background-color: #d1c8c8;
+}
+
+
+.email-logado
+{
+
+  font-size: 10pt;
+  position: relative;
+  right: 15%;
+
+}

@@ -1,0 +1,117 @@
+package com.eits.desafio.domain.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.directwebremoting.annotations.RemoteProxy;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.eits.desafio.domain.entity.Usuario;
+import com.eits.desafio.domain.repository.IUsuariosRepository;
+import com.eits.desafio.infraestructure.Mailer;
+
+@Service 
+@RemoteProxy
+@Transactional
+public class UsuarioService
+{
+	
+	@Autowired 
+	private IUsuariosRepository usuariosRepository;
+	
+	@Autowired
+	private Mailer mailer;
+	
+	public String getMsg()
+	{
+		return "Hello World!!";
+	}
+	
+	
+	//metodo para inserção de novo usuario, com todas as validações necessárias
+	public Usuario insert(Usuario usuario)
+	{
+		//Método que procura o email do usuario a ser cadastrado no banco
+		// se encontrar retorna um erro de email em uso
+		if ( usuariosRepository.findByEmail(usuario.getEmail()) != null)
+		{
+			throw new IllegalArgumentException("E-mail em uso");
+		}
+		
+		//Método que procura o cpf do usuario a ser cadastrado no banco
+		// se encontrar retorna um erro de cpf ja cadastrado
+		if ( usuariosRepository.findByCpf(usuario.getCpf()) != null)
+		{
+			throw new IllegalArgumentException("CPF ja cadastrado");
+		}
+		
+		//Método que valida o CPF do usuario a ser cadastrado com base em calculos 
+		//usando o digito verificador
+		if (!usuario.isValidCPF(usuario.getCpf()))
+		{
+			throw new IllegalArgumentException("CPF inválido");
+		}
+		
+		//Método que procura o nome do usuario a ser cadastrado no banco
+		// se encontrar retorna um erro de nome ja cadastrado
+		if (usuariosRepository.findByNome(usuario.getNome()) != null)
+		{
+			throw new IllegalArgumentException("Nome em uso");
+		}
+		
+		mailer.send(usuario); //envia email ao usuario recem cadastrado
+		
+		//Criptografa a senha do usuario Cadastrado
+		String hash = new BCryptPasswordEncoder().encode(usuario.getPassword());
+		usuario.setSenha(hash);
+		
+		//usuario.setData_cadastro(this.DataAtual());
+		//usuario.setAtivo(true);
+		//usuario.setCriador(this.getCurrent().getNome());
+		
+		return usuariosRepository.save(usuario);
+		
+	}
+
+	public Usuario findById(long id)
+	{
+		 return usuariosRepository.findOne(id);
+	}
+
+
+	public List<Usuario> list() 
+	{
+		return usuariosRepository.findAll();
+	}
+	
+	public Usuario update(Usuario usuario)
+	{
+		return usuariosRepository.saveAndFlush(usuario);
+	}
+	
+	public Usuario getCurrent()
+	{
+		//Usuario userCurrent = (Usuario) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		return usuariosRepository.findByEmail("wagner.mattei@gmail.com");
+	}
+	
+	
+	
+	public Usuario AlterStatus(Usuario usuario) {
+		if ( usuario.isAtivo())
+		{
+			usuario.setAtivo(false);
+		}
+		else
+		{
+			usuario.setAtivo(true);
+		}
+		return update(usuario);
+		
+	}
+
+	
+}

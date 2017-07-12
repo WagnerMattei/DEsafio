@@ -1,0 +1,36 @@
+<div id="formulario">  
+
+
+  <form #myForm="ngForm">
+    <div layout-gt-xs="row" layout-margin>
+      <ul>     
+        
+        <li><md-input-container flex>
+          <input mdInput type="text" #nomeForm="ngModel" placeholder="Nome da conta" [(ngModel)]="conta.nome" name="nome" required class="campos"  tdAutoTrim/>
+          <md-hint>
+            <span [hidden]="nomeForm.pristine || !nomeForm.errors?.required" class="tc-red-600">Obrigatório</span>
+          </md-hint>
+        </md-input-container></li>
+
+      
+        <li><md-input-container flex>
+          <textarea mdInput #descricaoForm="ngModel" placeholder="Descrição" [(ngModel)]="conta.descricao" name="descricao" class="campos"></textarea>
+         
+        </md-input-container></li>
+
+        <li><md-input-container *ngIf="conta.numero != undefined" flex>
+          <input mdInput type="number" #saldoForm="ngModel" placeholder="Saldo" [(ngModel)]="conta.saldo" name="saldo" class="campos"  tdAutoTrim/>
+
+        </md-input-container></li>
+       
+
+      </ul>
+    </div>
+    <md-divider></md-divider>
+    <div class="inset">
+      <button type="submit" md-raised-button color="accent" (click)="inserirConta($event)" [disabled]="!myForm.valid"  >SALVAR</button>
+      <a md-raised-button (click)="confirmarSaida()">CANCELAR</a>
+      <md-progress-bar *ngIf="rodar" mode="indeterminate"></md-progress-bar>
+    </div>
+  </form>
+</div>

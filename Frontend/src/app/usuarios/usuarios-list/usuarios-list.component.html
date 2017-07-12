@@ -1,0 +1,55 @@
+<md-card class="lista">
+  <div layout="row" layout-align="start center" class="pad-left-sm pad-right-sm">
+      <span class="md-title">Lista de Usuários</span>
+      <td-search-box #pesquisa backIcon="arrow_back" class="push-right-sm" (searchDebounce)="listUsuariosByFilter(pesquisa.value)" placeholder="Pesquisa por nome ou e-mail"  flex>
+      </td-search-box>
+  </div>
+  <md-divider></md-divider>
+  <md-list>
+    <md-list-item>
+      <div class="nome"><h3>Nome</h3></div>
+      <div class="email"><h3>E-mail</h3></div>
+      <div class="acoes"><h3>Ações</h3></div>
+      <span hide-xs class="md-sort-header" flex="40" layout="row" layout-align="center center" 
+        class="pad-left md-body-1 tc-grey-500">
+      </span>
+    </md-list-item>
+    <md-divider></md-divider>
+    <div class="msgNaoEncontrado" *ngIf="usuarios?.numberOfElements == 0">Nenhum Usuario encontrado!</div>
+    <ng-template let-item let-last="last" ngFor [ngForOf]="usuarios?.content">
+    <md-list>
+        <a md-list-item>
+          <div class="item-nome">{{item.nome | truncate:30}}</div>
+          <div class="item-email">{{item.email | truncate:40}}</div>
+          <a md-mini-fab mdTooltip="Detalhes" mdTooltipPosition="above"  class="detail-button" [routerLink]="['/usuarios/', item.id]"><md-icon>details</md-icon></a>
+          <a  md-mini-fab mdTooltip="Editar" mdTooltipPosition="above" class="edit-button" *ngIf="(userLogado?.permissoes == 'ADMINISTRADOR')"   [routerLink]="['/usuarios/edit', item.id]"><md-icon>edit</md-icon></a>
+          <md-slide-toggle mdTooltip="Desativar" mdTooltipPosition="above" class="disable-button" *ngIf="item.ativo && userLogado?.permissoes == 'ADMINISTRADOR' && item.id != userLogado.id" [checked]="true" (click)="AlterarStatus($event, item)" ></md-slide-toggle>
+          <md-slide-toggle mdTooltip="Ativar" mdTooltipPosition="above" class="disable-button" *ngIf="!item.ativo && userLogado?.permissoes == 'ADMINISTRADOR'"  [checked]="false" (click)="AlterarStatus($event, item)"></md-slide-toggle>
+        </a>
+    <md-divider></md-divider>
+    </md-list>
+    </ng-template>
+    <td-paging-bar #pagingBar 
+      [firstLast]="true" 
+      [pageSizeAll]="false" 
+      [pageSizes]="[5, 10]"
+        pageLinkCount="3" 
+      [initialPage]="1" 
+      [pageSize]="pageSizes" 
+      [total]="totalElementos" 
+      (change)="change($event)">
+      {{pagingBar.range}} 
+      <span hide-xs>
+          of {{pagingBar.total}}
+      </span>
+    </td-paging-bar> 
+    <!--<button type="submit" value="testeDWR" (click)="testeDWR()"> Teste</button>-->
+  </md-list>
+  <md-divider></md-divider>
+</md-card>
+<a *ngIf="userLogado?.permissoes == 'ADMINISTRADOR'" mdTooltip="Inserir usuário" mdTooltipPosition="before" md md-fab td-sidenav-content color="accent" [routerLink]="['/usuarios/novo']" class="botao-inserir" > 
+<md-icon>add</md-icon></a> 
+
+
+
+

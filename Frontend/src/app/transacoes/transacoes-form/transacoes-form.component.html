@@ -1,0 +1,89 @@
+<div id="formulario">  
+
+
+  <form #myForm="ngForm">
+    <div layout-gt-xs="row" layout-margin>
+      <ul>     
+        
+        <li><md-input-container *ngIf="!transacao.efetivado" flex>
+          <input mdInput type="number" #valorForm="ngModel" placeholder="Valor" [(ngModel)]="transacao.valor" name="valor" min="1.00" step="0.01"  required class="campos"  tdAutoTrim/>
+          <md-hint>
+            <span [hidden]="valorForm.pristine || !valorForm.errors?.required" class="tc-red-600">Obrigatório</span>
+          </md-hint>
+        </md-input-container></li>
+
+      
+        <md-input-container *ngIf="!transacao.efetivado" class="campos">
+          <input [min]="hoje"  mdInput #dataVencimentoForm="ngModel" [(ngModel)]="transacao.dataVencimento" [mdDatepicker]="picker" placeholder="Data da Vencimento" required name="dataVencimento">
+          <button mdSuffix [mdDatepickerToggle]="picker"></button>
+          <md-hint>
+            <span [hidden]="dataVencimentoForm.pristine || !dataVencimentoForm.errors?.required" class="tc-red-600">Obrigatório</span>
+            <span [hidden]="dataVencimentoForm.pristine || !dataVencimentoForm.errors?.mdDatepickerMin" class="tc-red-600">A data de vencimento não pode ser inferior a data atual</span>
+          </md-hint>
+        </md-input-container>
+        <md-datepicker #picker></md-datepicker>
+          
+
+
+        <li><md-input-container  flex>
+          <textarea mdInput #descricaoForm="ngModel" placeholder="Descrição" [(ngModel)]="transacao.descricao" name="descricao" class="campos"></textarea>
+         
+        </md-input-container></li>
+
+      
+          <md-select *ngIf="!transacao.efetivado" required #contaOrigemForm="ngModel" placeholder="Conta de Origem" [(ngModel)]="transacao.contaOrigem" name="contaOrigem"  class="campos" >
+            <md-option disabled>
+              <td-search-input  #pesquisaOrigem class="pesquisa" (searchDebounce)="listContasOrigemByFilter(pesquisaOrigem.value)" mdInput placeholder="Pesquisa" ></td-search-input>
+            </md-option>
+            <md-option *ngIf="transacao.id && transacao.contaOrigem != null" [value]="transacao.contaOrigem">{{ transacao?.contaOrigem?.numero}} {{ transacao?.contaOrigem?.nome }}</md-option>
+            <md-option *ngFor="let contas of contas?.content" [value]="contas">
+              {{ contas.numero }} {{ contas.nome}}
+            </md-option>
+            
+            <md-divider></md-divider>
+          </md-select>
+
+          <md-select *ngIf="!transacao.efetivado" required #contaDestinoForm="ngModel" placeholder="Conta de Destino" [(ngModel)]="transacao.contaDestino" name="contaDestino"  class="destino" >
+            <md-option disabled >
+              <td-search-input  #pesquisaDestino class="pesquisa" (searchDebounce)="listContasDestinoByFilter(pesquisaDestino.value)" mdInput placeholder="Pesquisa" ></td-search-input>
+            </md-option>
+            <md-option *ngIf="transacao.id && transacao.contaDestino != null" [value]="transacao.contaDestino">{{ transacao?.contaDestino?.numero}} {{ transacao?.contaDestino?.nome }}</md-option>
+            <md-option *ngFor="let contas of contasAux?.content" [value]="contas"> {{contas.numero}} {{contas.nome}} </md-option>
+            <md-divider></md-divider>
+          </md-select>
+
+
+          <div *ngIf="transacao.id && transacao.efetivado" layout="row" [ngClass]="(!transacao.efetivado)?'arquivo':'arquivo2'">
+            <md-input-container tdFileDrop
+                                (fileDrop)="file = $event"
+                                (click)="fileInput.inputElement.click()"
+                                (keyup.enter)="fileInput.inputElement.click()"
+                                (keyup.delete)="fileInput.clear()"
+                                (keyup.backspace)="fileInput.clear()"
+                                flex>
+                                
+                <input mdInput
+                    placeholder="Selecione ou araste o arquivo"
+                    [value]="file ? (file?.name) : (transacao?.filePath ? (transacao.filePath): null)"
+                    [disabled]="disabled"
+                    readonly/>
+                    
+            </md-input-container>
+            <button md-icon-button *ngIf="(file) || (transacao.filePath)" (click)="clearInput(transacao)" (keyup.enter)="fileInput.clear()">
+                <md-icon>cancel</md-icon>
+            </button>
+            <td-file-input color="accent" #fileInput name="file" [(ngModel)]="file"  [multiple]="false" [disabled]="disabled">
+                <md-icon>attach_file</md-icon>
+                <span >Selecionar...</span>
+            </td-file-input>
+        </div>   
+      </ul>
+    </div>
+    <md-divider></md-divider>
+    <div class="inset">
+      <button type="submit" md-raised-button color="accent" (click)="inserirTransacao($event)" [disabled]="!myForm.valid"  >SALVAR</button>
+      <a md-raised-button (click)="confirmarSaida()">CANCELAR</a>
+      <md-progress-bar *ngIf="rodar" mode="indeterminate"></md-progress-bar>
+    </div>
+  </form>
+</div>

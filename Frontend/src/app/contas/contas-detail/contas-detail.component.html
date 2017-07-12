@@ -1,0 +1,63 @@
+<body id="detalhes">
+  <md-card>
+    <md-card-title>Detalhes da conta "{{conta.nome}}"</md-card-title>
+    <md-divider></md-divider>
+    <md-list>
+      <h3 md-subheader>Dados da Conta</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>credit_card</md-icon>
+          <h4 md-line>{{conta.nome}}</h4>
+          <p md-line>Nome</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>vpn_key</md-icon>
+          <h4 md-line>{{conta.numero}}</h4>
+          <p md-line>Número da Conta</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>description</md-icon>
+          <h4 md-line>{{conta.descricao}}</h4>
+          <p md-line>Descrição</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>attach_money</md-icon>
+          <h4 md-line>R$ 400,00</h4>
+          <p md-line>Saldo</p>
+      </md-list-item>
+      <md-divider></md-divider>
+    
+      <h3 md-subheader>Criação/Alteração</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{conta?.dataCadastro?.dayOfMonth}}/{{conta?.dataCadastro?.monthValue}}/{{conta?.dataCadastro?.year}}</h4>
+          <p md-line>Data de Cadastro</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{conta?.dataAlteracao?.dayOfMonth}}/{{conta?.dataAlteracao?.monthValue}}/{{conta?.dataAlteracao?.year}}</h4>
+          <p md-line>Data de Alteração</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{conta?.criador?.nome}}</h4>
+          <p md-line>Criado por:</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{conta?.ultimoAlterador?.nome}}</h4>
+          <p md-line>Alterado por:</p>
+      </md-list-item>
+    </md-list>
+    <md-divider></md-divider>
+    <md-card-actions>
+      <button md-button  [routerLink]="['/contas/edit', conta.numero]" color="accent" class="text-upper">Editar</button>
+      <button md-button [routerLink]="['/contas']" class="text-upper">Voltar</button>
+    </md-card-actions>
+  </md-card>
+</body>

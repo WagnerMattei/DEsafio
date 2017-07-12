@@ -1,0 +1,58 @@
+<md-card class="lista">
+  <div layout="row" layout-align="start center" class="pad-left-sm pad-right-sm">   
+    <span class="md-title">Lista de Transações</span>
+    <td-search-box #pesquisa backIcon="arrow_back" class="push-right-sm" (searchDebounce)="listTransacoesByFilter(pesquisa.value)" placeholder="Pesquisar por nome de conta envolvida (Origem ou Destino)"  flex>
+    </td-search-box>
+  </div>
+  <md-divider></md-divider>
+  <md-list>
+    <md-list-item>
+      <div class="valor"><h3>Valor</h3></div>
+      <div class="vencimento"><h3>Vencimento</h3></div>
+      <div class="origem"><h3>C. Origem</h3></div>
+      <div class="destino"><h3>C. Destino</h3></div>
+      <div class="acoes"><h3>Ações</h3></div>
+      <span hide-xs class="md-sort-header" flex="40" layout="row" layout-align="center center" 
+        class="pad-left md-body-1 tc-grey-500">
+      </span>
+    </md-list-item>
+    <md-divider></md-divider>
+    <ng-template let-item let-last="last" ngFor [ngForOf]="transacoes?.content">
+    <md-list>
+       <a md-list-item> 
+          <div class="item-valor">R$ {{ item.valor | number:'.2-2'}}</div>
+          <div class="item-data">{{ item.dataVencimento | date: 'dd'}}/{{item.dataVencimento | date:'MM'}}/{{item.dataVencimento | date: 'yyyy'}}</div>
+          <div class="item-origem">{{ item.contaOrigem?.nome }}</div>
+          <div class="item-destino">{{ item.contaDestino?.nome }}</div>
+          <a md-mini-fab mdTooltip="Efetivar" mdTooltipPosition="above" class="efetivar"  (click)="confirmarEfetivar(item)"><md-icon>check</md-icon></a>
+          <a md-mini-fab *ngIf="item.efetivado" mdTooltip="Já Efetivado!" mdTooltipPosition="above" class="efetivado" (click)="confirmarEfetivar(item)"><md-icon>check</md-icon></a>
+          <a md-mini-fab  mdTooltip="Detalhes" mdTooltipPosition="above" class="details" [routerLink]="['/transacoes/', item.id]"><md-icon>details</md-icon></a>
+          <a md-mini-fab mdTooltip="Editar" mdTooltipPosition="above" class="edit" [routerLink]="['/transacoes/edit', item.id]"><md-icon>edit</md-icon></a>
+          <a md-mini-fab mdTooltip="Excluir" mdTooltipPosition="above" *ngIf="userLogado?.permissoes == 'ADMINISTRADOR'" class="delete" (click)="confirmarExclusao(item)"><md-icon>delete</md-icon></a>
+       </a>
+       <md-divider></md-divider>
+    </md-list>  
+    </ng-template>
+    <td-paging-bar #pagingBar
+      [firstLast]="true" 
+      [pageSizeAll]="false" 
+      [pageSizes]="[5, 10]"
+        pageLinkCount="3" 
+      [initialPage]="1" 
+      [pageSize]="pageSizes" 
+      [total]="totalElementos" 
+      (change)="change($event)">
+      {{pagingBar.range}} 
+      <span hide-xs>
+        of {{pagingBar.total}}
+      </span>
+    </td-paging-bar>
+<md-progress-bar *ngIf="rodar" mode="indeterminate"></md-progress-bar>
+  </md-list>
+  <md-divider></md-divider>
+</md-card>
+<a mdTooltip="Inserir transação" mdTooltipPosition="before" md-fab td-sidenav-content color="accent" [routerLink]="['/transacoes/novo']" class="botao-inserir" > 
+<md-icon>add</md-icon></a> 
+
+
+

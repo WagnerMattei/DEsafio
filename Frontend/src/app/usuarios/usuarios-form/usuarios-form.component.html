@@ -1,0 +1,111 @@
+<div id="formulario">  
+
+
+  <form #myForm="ngForm">
+    <div layout-gt-xs="row" layout-margin>
+      <ul>     
+        
+        <li><md-input-container flex>
+          <input mdInput type="text" #nomeForm="ngModel" placeholder="Nome completo" [(ngModel)]="usuario.nome" name="nome" required class="campos"  tdAutoTrim/>
+          <md-hint>
+            <span [hidden]="nomeForm.pristine || !nomeForm.errors?.required" class="tc-red-600">Obrigatório</span>
+          </md-hint>
+        </md-input-container></li>
+
+      
+        <li><md-input-container flex>
+          <input mdInput maxlength="11" minlength="11" type="text" pattern="^(0|[0-9][0-9]*)$" #cpfForm="ngModel" placeholder="CPF" [(ngModel)]="usuario.cpf" name="cpf" class="campos" tdAutoTrim/>
+          <md-hint>
+            <span [hidden]="cpfForm.pristine" class="tc-red-600">
+              <span [hidden]="!cpfForm.errors?.required">Obrigatório</span>
+              <span [hidden]="!cpfForm.errors?.pattern">Apenas números</span>
+              <span [hidden]="!cpfForm.errors?.minlength">11 dígitos</span>
+            </span>
+          </md-hint>
+        </md-input-container></li>
+
+
+        <li><md-input-container flex>
+          <input mdInput type="text" #enderecoForm="ngModel" required placeholder="Endereço" [(ngModel)]="usuario.endereco" name="endereco"  maxlength="144" class="campos" tdAutoTrim/>
+        </md-input-container></li>
+
+      
+        <li><md-input-container flex>
+          <input mdInput type="text" pattern="^(0|[0-9][0-9]*)$" #celularForm="ngModel" placeholder="Celular" [(ngModel)]="usuario.celular" name="celular" class="celular" tdAutoTrim/>        
+          <md-hint>
+            <span [hidden]="celularForm.pristine" class="tc-red-600">
+              <span [hidden]="!celularForm.errors?.pattern">Apenas números</span>
+            </span>
+          </md-hint>
+        </md-input-container></li>
+
+        <md-select #permissoesForm="ngModel" placeholder="Permissão" [(ngModel)]="usuario.permissoes" name="permissoes" required class="permissao" >
+          <md-option *ngFor="let permissoes of permissoes" [value]="permissoes.value">
+            {{ permissoes.viewValue }}
+          </md-option>
+        </md-select>
+
+        <li><md-input-container flex>
+          <input mdInput type="text" #emailForm="ngModel" placeholder="E-mail" [(ngModel)]="usuario.email" name="email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" class="campos" tdAutoTrim/>
+          <md-hint>
+            <span [hidden]="emailForm.pristine" class="tc-red-600">
+              <span [hidden]="!emailForm.errors?.required">Obrigatório</span>
+              <span [hidden]="!emailForm.errors?.pattern">Formato: exemplo@exemplo.com</span>
+            </span>
+          </md-hint>
+        </md-input-container></li>
+
+      
+       
+        <div *ngIf="usuario.id == undefined">
+          <md-input-container  flex>
+                <input mdInput [required]="usuario.id == undefined" #senha #senhaForm="ngModel" mdInput tdAutoTrim type="password" name ="senha" [(ngModel)]="usuario.senha" placeholder="Senha" class="senha"/>
+          </md-input-container>
+          <md-input-container  class="confirmSenha" flex>
+                <input mdInput [required]="usuario.id == undefined" #confirmSenha #confirmSenhaForm="ngModel" mdInput tdAutoTrim type="password" name ="confirmSenha" [(ngModel)]="usuario.confirmSenha" placeholder="Confirme a senha" />
+          </md-input-container>
+          <md-hint>
+              <span *ngIf="(senha.value != confirmSenha.value)  && myForm.submitted" class="tc-red-600">
+                      <span [hidden]="confirmSenha.pristine" ><br>Senhas não conferem</span>
+              </span>
+          </md-hint>
+        </div>
+
+        
+
+        <td-expansion-panel *ngIf="usuario.id != undefined" [expand]="false">
+                <ng-template td-expansion-panel-label>
+                    <span>Alterar senha</span>
+                </ng-template>
+
+                <form #SenhaForm="ngForm"  class="md-padding" layout="column">
+                    
+                    <md-input-container flex>
+                         <input mdInput [required]="usuario.id" #novaSenha maxlength="50" mdInput tdAutoTrim type="password" name ="senha" [(ngModel)]="usuario.senha" placeholder="Nova senha"/>
+                    </md-input-container>
+                    <md-input-container flex>
+                         <input mdInput [required]="usuario.id" #confirmNovaSenha maxlength="50" mdInput tdAutoTrim type="password" name ="confirmSenha" [(ngModel)]="usuario.confirmSenha" placeholder="Confirme a senha"/>
+                    </md-input-container>
+                    <md-hint>
+                        <span *ngIf="(novaSenha.value != confirmNovaSenha.value)  && SenhaForm.submitted" class="tc-red-600">
+                                <span [hidden]="confirmNovaSenha.pristine" >Senhas não conferem</span>
+                        </span>
+                    </md-hint>
+                    <md-divider></md-divider>
+                    <div layout="row" layout-margin layout-align="end center">
+                        <button md-button [disabled]="SenhaForm.form.invalid" color="accent" (click)="updateUsuarioToSenha(usuario)" class="text-upper">Salvar senha</button>
+                    </div>
+
+                </form>
+                </td-expansion-panel>
+
+      </ul>
+    </div>
+    <md-divider></md-divider>
+    <div class="inset">
+      <button type="submit" md-raised-button color="accent" (click)="inserirUsuario($event, usuario.id)" [disabled]="!myForm.valid"  >SALVAR</button> 
+      <a md-raised-button (click)="confirmarSaida()">CANCELAR</a>
+      <md-progress-bar *ngIf="rodar" mode="indeterminate"></md-progress-bar>
+    </div>
+  </form>
+</div>

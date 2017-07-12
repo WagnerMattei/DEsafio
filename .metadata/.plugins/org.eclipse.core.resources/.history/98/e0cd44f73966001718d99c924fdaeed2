@@ -1,0 +1,47 @@
+package com.eits.desafio.infraestructure;
+
+import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+=======
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
+
+<<<<<<< HEAD
+@PropertySource({"classpath:env/db.properties"})
+=======
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+@Component
+public class Mailer 
+{
+	
+	@Autowired
+<<<<<<< HEAD
+	private Environment env;
+	
+	@Autowired
+=======
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+	private JavaMailSender mailSender;
+	
+	public void send(String destino, String email, String assunto)
+	{
+		SimpleMailMessage mensagem = new SimpleMailMessage();
+<<<<<<< HEAD
+		mensagem.setFrom(env.getProperty("email"));
+		System.out.println(env.getProperty("mailUsername"));
+=======
+		mensagem.setFrom("wagner.mattei@eits.com.br");
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+		mensagem.setTo(destino);
+		mensagem.setSubject(assunto);
+		mensagem.setText(email);
+		
+		mailSender.send(mensagem);
+		
+	}
+
+}

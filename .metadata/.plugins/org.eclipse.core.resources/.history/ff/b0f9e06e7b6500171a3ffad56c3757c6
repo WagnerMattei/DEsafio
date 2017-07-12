@@ -1,0 +1,7 @@
+username=postgres
+password=eits
+url=jdbc:postgresql://localhost:5432/banco_desafio
+drive=org.postgresql.Driver
+mailUsername=DesafioeEitsWagner
+mailPassword=enviaremail123
+email=wagner.mattei@gmail.com

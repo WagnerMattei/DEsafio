@@ -1,0 +1,54 @@
+package com.eits.desafio.application.configuration;
+
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+import com.eits.desafio.infraestructure.Mailer;
+
+@ComponentScan( basePackageClasses = Mailer.class)
+@Configuration
+<<<<<<< HEAD
+@PropertySource({"classpath:env/db.properties"})
+=======
+@PropertySource({"classpath:env/mail.properties"})
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+public class MailConfig
+{
+	
+	@Autowired
+	private Environment env;
+	
+	@Bean
+	public JavaMailSender mailSender() 
+	{
+		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+		mailSender.setHost("smtp.sendgrid.net");
+		mailSender.setPort(587);
+<<<<<<< HEAD
+		mailSender.setUsername(env.getProperty("mailUsername"));
+		mailSender.setPassword(env.getProperty("mailPassword"));
+=======
+		mailSender.setUsername(env.getProperty("username"));
+		mailSender.setPassword(env.getProperty("password"));
+>>>>>>> 8851d5fda2c05c51e9ab5be21e1b0327439774f7
+		
+		Properties props = new Properties();
+		props.put("mail.transport.protocol", "smtp");
+		props.put("mail.smtp.auth", true);
+		props.put("mail.smtp.starttls.enable", true);
+		props.put("mail.debug", false);
+		props.put("mail.smtp.connectiontimeout", 10000); // miliseconds
+
+		mailSender.setJavaMailProperties(props);
+		
+		return mailSender;
+	}
+}

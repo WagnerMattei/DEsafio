@@ -1,0 +1,300 @@
+package com.eits.desafio.domain.service;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+
+import org.directwebremoting.annotations.RemoteProxy;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.eits.desafio.domain.entity.Transacao;
+import com.eits.desafio.domain.repository.IContasRepository;
+import com.eits.desafio.domain.repository.ITransacoesRepository;
+import com.eits.desafio.infraestructure.Mailer;
+
+@Service 
+@RemoteProxy
+@Transactional
+public class TransacaoService
+{
+	/**
+	 * 
+	 */
+	
+	@Autowired 
+	private ITransacoesRepository transacaoRepository;
+
+	@Autowired
+	private UsuarioService usuarioService;
+	
+	@Autowired
+	private IContasRepository contasRepository;
+	
+	@Autowired
+	private Mailer mailer;
+	
+ 
+	
+	/**
+	 * 
+	 * @param transacao
+	 * @return
+	 * INSERT
+	 */
+
+	public ResponseEntity<String> insert(Transacao transacao)
+	{
+		//Verifica se o objeto chegou vazio
+		if (transacao.equals(null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("transacao indefinido");
+		}
+		
+		//Verifica se as contas de destino e origem são as mesmas
+		if (transacao.getContaDestino().getNome().equals(transacao.getContaOrigem().getNome()))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Contas de Origem e Destino não podem ser as mesmas");
+		}
+		
+		//A data atual do calendar está um dia atrasado, por isso a adição
+		transacao.getDataVencimento().add(Calendar.DATE, +1);
+		
+		//Verifica se data de vencimento informada é menor que a data atual do sistema
+		if (transacao.getDataVencimento().before(Calendar.getInstance()))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("A data de vencimento deve ser maior que a data atual");
+		}
+		
+		//Seta o criador da transacao com o usuario logado
+		transacao.setCriador(usuarioService.getCurrent()); 
+		
+		//Seta a data de cadastro com a data atual do sistema
+		transacao.setDataCadastro(LocalDate.now());
+		
+		//Inicializa a transacao como nao efetivada
+		transacao.setEfetivado(false);
+		
+		//Remover o dia adicionado antes de salvar no banco
+		transacao.getDataVencimento().add(Calendar.DATE, -1);
+		transacaoRepository.save(transacao);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Transação salva com sucesso!");
+		
+	}
+	
+	/**
+	 * 
+	 * @param transacao
+	 * @return
+	 * UPDATE
+	 */
+	
+	public ResponseEntity<String> update(Transacao transacao)
+	{
+		//Verifica se o objeto chegou vazio
+		if (transacao.equals(null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("transacao indefinido");
+		}
+		
+		//A data atual do calendar está um dia atrasado, por isso a adição
+		transacao.getDataVencimento().add(Calendar.DATE, +1);
+		
+		//verifica se a data de vencimento informada é menor que a data atual do sistema
+		if (transacao.getDataVencimento().before(Calendar.getInstance()))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("A data de vencimento deve ser maior que a data atual");
+		}
+		
+		//Verifica se as contas de destino e de origem sao as mesmas
+		if (transacao.getContaDestino().getNome().equals(transacao.getContaOrigem().getNome()))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Contas de Origem e Destino não podem ser as mesmas");
+		}
+		
+		//Seta a data de alteracao com a data atual do sistema
+		transacao.setDataAlteracao(LocalDate.now());
+		
+		//Clone para nao alterar a data de cadastro
+		Transacao novaTrans = new Transacao(); 
+		novaTrans = transacaoRepository.findOne(transacao.getId());
+		transacao.setDataCadastro(novaTrans.getDataCadastro());
+		
+		//Seta o ultimo alterador com o usuario logado
+		transacao.setUltimoAlterador(usuarioService.getCurrent());
+		
+		//remover o dia adicionado antes de salvar no banco
+		transacao.getDataVencimento().add(Calendar.DATE, -1);
+		transacaoRepository.saveAndFlush(transacao);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Transação salva com sucesso!");
+	}
+	
+	/**
+	 * 
+	 * @param transacao
+	 * @return
+	 * UPDATE TRANSACAO TO EFETIVADO
+	 */
+	
+	public ResponseEntity<String> updateTransacaoToEfetivado(Transacao transacao)
+	{
+		//Verifica se o objeto chegou vazio
+		if (transacao.equals(null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("transacao indefinido");
+		}
+		
+		//Verifica se a transacao ja foi eetivada
+		if (transacao.isEfetivado())
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Transação ja efetivada");
+		}
+		
+		//Verifica se o saldo é suficiente
+		//Seta o saldo negativo minimo como -1000
+		if ( transacao.getContaOrigem().getSaldo() < transacao.getValor()-1000 )
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Saldo insuficiente");
+		}
+		
+		//Subtrai da conta de origem
+		transacao.getContaOrigem().setSaldo(transacao.getContaOrigem().getSaldo() - transacao.getValor());
+		
+		//Soma a conta de destino
+		transacao.getContaDestino().setSaldo(transacao.getContaDestino().getSaldo() + transacao.getValor());
+		
+		//Seta a transação como efetivada
+		transacao.setEfetivado(true);
+		
+		//Seta o usuario que efetivou com o usuario logado
+		transacao.setEfetivador(usuarioService.getCurrent());
+		
+		//Seta a date de efetivacao com a data atual do sistema
+		transacao.setDataEfetivacao(LocalDate.now());
+		
+		//Atualiza as contas com o sald novo
+		contasRepository.saveAndFlush(transacao.getContaDestino());
+		contasRepository.saveAndFlush(transacao.getContaOrigem());
+		
+		
+		//Envia email para o criador caso a transação seja efetivada com atraso
+		//Adicionar um dia pq a data atual do calendar eh zuada
+		transacao.getDataVencimento().add(Calendar.DATE, +1);
+		if (transacao.getDataVencimento().before(Calendar.getInstance()))
+		{
+			transacao.getDataVencimento().add(Calendar.DATE, 0);
+			SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy"); //Calendar
+			String dataVencimentoFormatada = format.format(transacao.getDataVencimento().getTime()); //Calendar
+			
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-LLLL-yyyy"); //LocalDate
+			String dataEfetivacaoFormatada = transacao.getDataEfetivacao().format(formatter); //LocalDate
+			String assunto = "Transação efetivada com atraso";
+			String destino = transacao.getCriador().getEmail();
+			String email = "Aviso!" + "\n" +
+							"A transação no valor de " + transacao.getValor() + "Reais" + "\n" + "\n" +
+							"De: " + transacao.getContaOrigem().getNome() + "\n" + "\n" +
+							"Para: " + transacao.getContaDestino().getNome() + "\n" + "\n" +
+							"Foi efetivada com atraso" + "\n" + "\n" +
+							"Data de Efetivação: " + dataEfetivacaoFormatada + "\n" + "\n" +
+							"Data de Vencimento: " + dataVencimentoFormatada + "\n" + "\n" + 
+							"Esta é uma mensagem automatica, favor não responder";
+			mailer.send(destino, email, assunto);
+			
+			//envia o mesmo email para o efetivador caso nao seja a mesma pessoa que o criador,
+			//para evitar de mandar email repetido
+			if (!transacao.getCriador().equals(transacao.getEfetivador()))
+			{
+				destino = transacao.getEfetivador().getEmail();
+				mailer.send(destino, email, assunto);
+			}
+		}	
+		
+		//remove o dia adicionado antes de dar update
+		transacao.getDataVencimento().add(Calendar.DATE, -1);
+		transacaoRepository.saveAndFlush(transacao);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Transação efetivada com sucesso!");
+	}
+	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * FIND BY ID
+	 */
+
+	public Transacao findById(long id)
+	{
+		 return transacaoRepository.findOne(id);
+
+	}
+
+	/**
+	 * 
+	 * @param page
+	 * @param size
+	 * @return
+	 * LIST
+	 */
+	
+	public Page<Transacao> list(int page, int size, String property, String order) 
+	{
+		Direction asc;
+		asc = Direction.ASC;
+		PageRequest pageable = new PageRequest(page, size, asc, property);
+		return transacaoRepository.findAll(pageable);
+	}
+	
+	/**
+	 * 
+	 * @param id
+	 * REMOVE
+	 */
+	
+	
+	@PreAuthorize("hasRole('ADMINISTRADOR')")
+	public ResponseEntity<String> remove(Long id)
+	{
+		//Verifica se a transação ja foi efetivada
+		if (transacaoRepository.findOne(id).isEfetivado())
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Transações efetivadas não podem ser excluidas");
+		}
+		this.transacaoRepository.delete(id);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Transação removida com sucesso!");
+	}
+	
+	/**
+	 * 
+	 * @param filter
+	 * @param page
+	 * @param size
+	 * @param property
+	 * @param order
+	 * @return
+	 */
+	//LIST TRANSACOES BY FILTERS//
+	//Metodo para filtrar transacoes
+	public Page<Transacao> listTransacoesByFilter(String filter, int page, int size, String property, String order)
+	{
+		Direction asc;
+		asc = Direction.ASC;
+		PageRequest pageable = new PageRequest(page, size, asc, property);
+		return transacaoRepository.listTransacoesByFilters(filter, pageable);
+	}
+	
+}
+	
+	
+	
+	
+	
+
+	

@@ -1,0 +1,87 @@
+<html>
+<body>                                                                                                  
+<div id="detalhes">
+  <md-card>
+    <md-card-title>Detalhes do usuário "{{usuario.nome}}"</md-card-title>
+    <md-divider></md-divider>
+    <md-list>
+      <h3 md-subheader>Dados Pessoais</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>account_box</md-icon>
+          <h4 md-line>{{usuario.nome}}</h4>
+          <p md-line>Nome</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>email</md-icon>
+          <h4 md-line>{{usuario.email}}</h4>
+          <p md-line>E-mail</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>local_phone</md-icon>
+          <h4 md-line>{{usuario.celular}}</h4>
+          <p md-line>Celular</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>vpn_key</md-icon>
+          <h4 md-line>{{usuario.id}}</h4>
+          <p md-line>ID</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>credit_card</md-icon>
+          <h4 md-line>{{usuario.cpf | cpfMask}}</h4>
+          <p md-line>CPF</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>map</md-icon>
+          <h4 md-line>{{usuario.endereco}}</h4>
+          <p md-line>Endereço</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>verified_user</md-icon>
+          <h4 md-line>{{usuario.permissoes}}</h4>
+          <p md-line>Permissão</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      
+    
+    
+      <h3 md-subheader>Criação/Alteração</h3>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{usuario?.dataCadastro?.dayOfMonth}}/{{usuario?.dataCadastro?.monthValue}}/{{usuario?.dataCadastro?.year}}</h4>
+          <p md-line>Data de Criação</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>today</md-icon>
+          <h4 md-line>{{usuario?.dataAlteracao?.dayOfMonth}}/{{usuario?.dataAlteracao?.monthValue}}/{{usuario?.dataAlteracao?.year}}</h4>
+          <p md-line>Data de Alteração</p>
+      </md-list-item>
+      <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{usuario?.criador?.nome}}</h4>
+          <p md-line>Criador por:</p>
+      </md-list-item>
+        <md-divider md-inset></md-divider>
+      <md-list-item>
+          <md-icon md-list-avatar>person</md-icon>
+          <h4 md-line>{{usuario?.ultimoAlterador?.nome}}</h4>
+          <p md-line>Alterado por:</p>
+      </md-list-item>
+    </md-list>
+    <md-divider></md-divider>
+    <md-card-actions>
+      <button *ngIf="userLogado?.permissoes == 'ADMINISTRADOR'" md-button [routerLink]="['/usuarios/edit', usuario.id]" color="accent" class="text-upper">Editar</button>
+      <button md-button [routerLink]="['/usuarios']" class="text-upper">Voltar</button>
+    </md-card-actions>
+  </md-card>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+package com.eits.desafio.domain.service;
+
+import java.time.LocalDate;
+
+import org.directwebremoting.annotations.RemoteProxy;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.eits.desafio.domain.entity.Conta;
+import com.eits.desafio.domain.repository.IContasRepository;
+import com.eits.desafio.domain.repository.ITransacoesRepository;
+
+@Service 
+@RemoteProxy(name="contaService")
+@Transactional
+public class ContaService
+{
+	/**
+	 * 
+	 */
+	
+	@Autowired 
+	private IContasRepository contasRepository;
+	
+	@Autowired 
+	private UsuarioService usuarioService;
+	
+	@Autowired
+	private ITransacoesRepository transacoesRepository;
+	
+	
+
+	/**
+	 * 
+	 * @param conta
+	 * @return
+	 * INSERT
+	 */
+	
+	//--------------------------------------------------------------------------------------------//
+	public ResponseEntity<String> insert(Conta conta)
+	{
+		//Verifica se o objeto chegou vazio
+		if (conta.equals(null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Conta indefinido");
+		}
+		//Verifica se o nome ja esta cadastrado
+		if(contasRepository.findByNome(conta.getNome()) != null)
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Nome ja em uso");
+		}
+		
+		//Seta a data do cadastro com a data atual do sistema
+		conta.setDataCadastro(LocalDate.now());
+		
+		//Saldo inicial setado como 0
+		conta.setSaldo(0);
+		
+		//Seta o criador com o usuario logado
+		conta.setCriador(usuarioService.getCurrent());
+		contasRepository.save(conta);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Conta salva com sucesso!");
+		
+	}
+	//--------------------------------------------------------------------------------------------//
+	
+	/**
+	 * 
+	 * @param numero
+	 * @return
+	 * FIND BY NUMERO
+	 */
+	//--------------------------------------------------------------------------------------------//
+	public Conta findByNumero(long numero)
+	{
+		 return contasRepository.findOne(numero);
+
+	}
+	//--------------------------------------------------------------------------------------------//
+	
+	/**
+	 * 
+	 * @param page
+	 * @param size
+	 * @return
+	 * LIST
+	 */
+
+
+	//--------------------------------------------------------------------------------------------//
+	//LIST//
+	// Método que retorna a lista de contas
+	public Page<Conta> list(int page, int size, String property, String order) 
+	{
+		Direction asc;
+		asc = Direction.ASC;
+		PageRequest pageable = new PageRequest(page, size, asc, property);
+		return contasRepository.findAll(pageable);
+	}
+	//--------------------------------------------------------------------------------------------//
+
+	/**
+	 * 
+	 * @param filter
+	 * @param page
+	 * @param size
+	 * @return
+	 * LIST CONTAS BY FILTERS
+	 */
+	//--------------------------------------------------------------------------------------------//
+	//LIST CONTAS BY FILTERS//
+	//Metodo para filtrar contas
+	public Page<Conta> listContasByFilters(String filter, int page, int size, String property, String order)
+	{
+		Direction asc;
+		asc = Direction.ASC;
+		PageRequest pageable = new PageRequest(page, size, asc, property);
+		return contasRepository.listContasByFilters(filter, pageable);
+	}
+	//--------------------------------------------------------------------------------------------//
+	
+	/**
+	 * 
+	 * @param conta
+	 * @return
+	 * UPDATE
+	 */
+	//--------------------------------------------------------------------------------------------//
+	public ResponseEntity<String> update(Conta conta)
+	{
+		//Verifica se o objeto chegou vazio
+		if (conta.equals(null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Conta indefinido");
+		}
+
+		Conta contaAntiga = new Conta();
+		contaAntiga = contasRepository.findOne(conta.getNumero());  
+		
+		//Verifica se o nome da conta é repetido
+		if ((contasRepository.findByNome(conta.getNome()) != null) )
+		{
+			if (!(contaAntiga.getNome().equals(conta.getNome())))
+			{
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Nome ja em uso");
+			}
+		}
+		
+		//Seta a data de alteracao com a data atual
+		conta.setDataAlteracao(LocalDate.now());
+		
+		//Clone para que a data de cadastro nao seja alterada
+		Conta novaConta = new Conta(); 
+		novaConta = contasRepository.findOne(conta.getNumero());
+		conta.setDataCadastro(novaConta.getDataCadastro());
+		
+		//Seta o ultimo alterador com o usuario logado
+		conta.setUltimoAlterador(usuarioService.getCurrent());
+		contasRepository.saveAndFlush(conta);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Conta salva com sucesso!");
+	}
+	//--------------------------------------------------------------------------------------------//
+	/**
+	 * 
+	 * @param numero
+	 * REMOVE
+	 */
+	//--------------------------------------------------------------------------------------------//
+	@PreAuthorize("hasRole('ADMINISTRADOR')")
+	public ResponseEntity<String> remove(Long numero)
+	{
+		//Verifica se o saldo eh menor que 0
+		if (this.contasRepository.findOne(numero).getSaldo() < 0)
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Não é possivel remover uma conta com saldo negativo");
+		}
+		
+		//Verifica se a conta esta relacionada com alguma transacao
+		if (transacoesRepository.findByConta(contasRepository.findOne(numero)) != null))
+		{
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Não foi possivel realizar a operação, conta relacionada com alguma transação");
+		}
+		this.contasRepository.delete(numero);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Conta removida com sucesso");
+	}
+	//--------------------------------------------------------------------------------------------//
+	
+	
+	
+
+	
+}

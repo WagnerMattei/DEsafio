@@ -1,0 +1,61 @@
+
+ul
+{
+    list-style: none;
+}
+
+
+
+.campos
+{
+    width: 800px;
+}
+
+
+
+.celular
+{
+    width: 400px;
+}
+
+.permissao
+{
+    width: 370px;
+    position: relative;
+    left: 430px;
+    top: -45px;
+
+}
+
+#formulario
+{
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 70%;
+    left: 15%;
+    top: 15%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+    z-index: 2;
+}
+
+
+
+.senha
+{
+    width: 400px;
+
+}
+
+.confirmSenha
+{
+    width: 370px;
+    position: relative;
+    left: 30px;
+}
+

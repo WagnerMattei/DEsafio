@@ -1,0 +1,28 @@
+#detalhes
+{
+    position: absolute;
+    display: block;
+    background: #dbd0d0;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    top: 10%;
+    padding: 20px;
+}
+
+md-card
+{
+    border-radius: 5px;
+}
+
+body
+{
+    background: #dbd0d0;
+    height: 100%;
+    width: 100%;
+}
+
+html
+{
+    background: #dbd0d0;
+}

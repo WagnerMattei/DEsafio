@@ -1,0 +1,31 @@
+
+
+<body>
+  <md-toolbar class="toolbar">
+        <button mdTooltip="Menu"  md-button (click)="sidenav.open()"><md-icon>menu</md-icon></button>
+        <button md-button mdTooltip="Home" [routerLink]="['/']"><md-icon>home</md-icon></button>
+        <div class="botao-sair">
+          <a mdTooltip="Sair"md-button href="/desafio/logout" ><md-icon>exit_to_app</md-icon></a>
+          <div class="email-logado">{{userLogado?.nome}}</div>
+        </div>
+  </md-toolbar>
+
+
+
+  <md-sidenav-container class="example-container">
+
+    <md-sidenav #sidenav class="example-sidenav">
+      <button class="botao-lateral" [routerLink]="['/usuarios']" [queryParams]="{page:1}">Cadastro de usuários</button>
+      <button class="botao-lateral" [routerLink]="['/contas']" [queryParams]="{page:1}"> Manutenção de contas</button>
+      <button class="botao-lateral" [routerLink]="['/transacoes']" [queryParams]="{page:1}"> Cadastro de transações</button>
+      
+    
+    </md-sidenav>
+
+    <router-outlet></router-outlet>
+  </md-sidenav-container>
+
+
+</body>
+
+

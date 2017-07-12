@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+<fullyQualifiedTypeName name="org.springframework.data.web.config.EnableSpringDataWebSupport"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Transacao"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Conta"/>
+<fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.UserRoleAuthorizationInterceptor"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="org.dom4j.IllegalAddException"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.directwebremoting.annotations.Param"/>
+<fullyQualifiedTypeName name="org.directwebremoting.annotations.RemoteMethod"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedEntityGraph"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedAttributeNode"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.EntityGraph"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.Basic"/>
+<fullyQualifiedTypeName name="org.directwebremoting.annotations.DataTransferObject"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.repository.IContasRepository"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.service.UsuarioService"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Permissoes"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.annotations.Nullability"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty.Access"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+</qualifiedTypeNameHistroy>

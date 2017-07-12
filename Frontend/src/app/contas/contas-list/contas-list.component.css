@@ -1,0 +1,110 @@
+
+
+.lista
+{
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 15%;
+    left: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+    width: 80%;
+}
+
+.botao-inserir
+{
+    z-index: 3;                                                                                                                                                                                                                                                                                                                                                                              
+    position: fixed;
+    right : 20px;
+    bottom : 20px;
+
+
+}
+
+.pesquisa
+{
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.msgNaoEncontrado
+{
+    margin-left: 35px;
+    margin-top: 35px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.nome
+{
+    position: absolute; 
+    left: 10%;
+}
+
+.numero
+{
+    position: absolute; 
+    left: 35%;
+}
+
+.saldo
+{
+    position: absolute; 
+    left: 60%;
+}
+
+.acoes
+{
+    position: absolute; 
+    left: 83%;
+}
+
+.item-nome
+{
+    position: absolute; 
+    left: 10%;
+}
+
+.item-numero
+{
+    position: absolute; 
+    left: 40%;
+}
+
+.item-saldo
+{
+    position: absolute; 
+    left: 60%;
+}
+
+.item-saldo-negativo
+{
+    position: absolute; 
+    left: 60%;
+    color: red;
+}
+
+.details
+{
+    position: absolute;
+    left: 80%; 
+    background-color: #89dfff;
+}
+
+.edit
+{
+    position: absolute; 
+    left: 85%; 
+    background-color: #89dfff;
+}
+
+.delete
+{
+    position: absolute; 
+    left: 90%; 
+    background-color: #89dfff;
+}

@@ -1,0 +1,59 @@
+
+ul
+{
+    list-style: none;
+}
+
+
+
+.campos
+{
+    width: 800px;
+}
+
+
+.destino
+{
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#formulario
+{
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 70%;
+    left: 15%;
+    top: 15%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+    z-index: 2;
+}
+
+.pesquisa
+{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    
+   
+
+}
+
+.arquivo
+{
+    width: 50%;
+}
+
+.arquivo2
+{
+
+    width: 100%;
+}
