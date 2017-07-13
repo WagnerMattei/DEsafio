@@ -45,7 +45,7 @@ public class WebConfig extends WebMvcConfigurerAdapter
 
         config.setAllowCredentials(true);
 
-        config.addAllowedOrigin("*");
+        config.addAllowedOrigin("/api/**");
 
         config.addAllowedHeader("*");
 
@@ -58,8 +58,9 @@ public class WebConfig extends WebMvcConfigurerAdapter
         config.addAllowedMethod("PUT");
 
         config.addAllowedMethod("DELETE");
-
+        
         source.registerCorsConfiguration("/**", config);
+        
 
         return new CorsFilter(source);
 	
@@ -77,7 +78,7 @@ public class WebConfig extends WebMvcConfigurerAdapter
 	@Override
 	public void addCorsMappings(CorsRegistry registry)
 	{
-		registry.addMapping("/**");
+		registry.addMapping("/api/**");
 	}
 	
 	@Bean

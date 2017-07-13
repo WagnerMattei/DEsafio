@@ -15,6 +15,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.eits.desafio.domain.entity.Transacao;
 import com.eits.desafio.domain.entity.Usuario;
 import com.eits.desafio.domain.repository.IUsuariosRepository;
 import com.eits.desafio.infraestructure.Mailer;
@@ -139,11 +140,13 @@ public class UsuarioService
 	
 	//LIST//
 	// Método que retorna a lista de usuarios
-	public Page<Usuario> list(int page, int size, String property) 
+	public Page<Usuario> list(int page, int size, String property, String order) 
 	{
+		System.out.println(page);
 		Direction asc;
 		asc = Direction.ASC;
 		PageRequest pageable = new PageRequest(page, size, asc, property);
+		System.out.println(pageable);
 		return usuariosRepository.findAll(pageable);
 	}
 	
@@ -231,6 +234,7 @@ public class UsuarioService
 	public Usuario getCurrent()
 	{
 		Usuario userCurrent = (Usuario) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		System.out.println(userCurrent.getNome());
 		return userCurrent;
 	}
 	
@@ -320,7 +324,7 @@ public class UsuarioService
 		usuario.setSenha(hash);
 		System.out.println(hash);
 
-		this.update(usuario);
+		usuariosRepository.saveAndFlush(usuario);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body("Senha alterada com sucesso!");
 	}
 

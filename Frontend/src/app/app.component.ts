@@ -20,6 +20,7 @@ export class AppComponent {
     usuariosService.getCurrentUser().subscribe(user => 
     { 
        this.userLogado = user;
+       console.log(this.userLogado);
     }, 
       erro => console.log(erro));
   }

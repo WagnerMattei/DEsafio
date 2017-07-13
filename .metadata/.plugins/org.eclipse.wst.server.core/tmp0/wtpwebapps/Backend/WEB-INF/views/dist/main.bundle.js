@@ -963,6 +963,7 @@ var UsuariosListComponent = (function () {
         var _this = this;
         this.usuariosService.listarUsuarios(event.page.valueOf() - 1, event.pageSize).subscribe(function (usuario) {
             _this.usuarios = usuario;
+            console.log(_this.usuarios);
             _this.size = event.pageSize;
         }, function (erro) {
             return console.log(erro);
@@ -1073,7 +1074,6 @@ var UsuariosService = (function () {
     //Pegar usuario logado//
     UsuariosService.prototype.getCurrentUser = function () {
         return this.http.get(this.url + '/getCurrentUser').map(function (res) { return res.json(); });
-        ;
     };
     //ALTERAR STATUS//
     UsuariosService.prototype.AlterarStatus = function (usuario) {
@@ -1191,6 +1191,7 @@ var AppComponent = (function () {
         this.title = 'app works!';
         usuariosService.getCurrentUser().subscribe(function (user) {
             _this.userLogado = user;
+            console.log(_this.userLogado);
         }, function (erro) { return console.log(erro); });
     }
     AppComponent.prototype.ngAfterViewInit = function () {

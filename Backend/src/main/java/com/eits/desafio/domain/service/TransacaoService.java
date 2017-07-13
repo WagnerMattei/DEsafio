@@ -194,16 +194,14 @@ public class TransacaoService
 		//Seta o usuario que efetivou com o usuario logado
 		transacao.setEfetivador(usuarioService.getCurrent());
 		
-		//Clone para que a datad e cadastro nao seja alterada
-		transacao.setDataEfetivacao(LocalDate.now());
 		
+		//Clone para que a datad e cadastro nao seja alterada
 		Transacao transacaoTemp = new Transacao();
 		transacaoTemp = transacaoRepository.findOne(transacao.getId());
 		transacao.setDataAlteracao(transacaoTemp.getDataAlteracao());
 		transacao.setDataCadastro(transacaoTemp.getDataCadastro());
 		
-		///seta a data de efetivacao
-		
+		transacao.setDataEfetivacao(LocalDate.now());
 		//Atualiza as contas com o sald novo
 		contasRepository.saveAndFlush(transacao.getContaDestino());
 		contasRepository.saveAndFlush(transacao.getContaOrigem());
@@ -214,7 +212,7 @@ public class TransacaoService
 		transacao.getDataVencimento().add(Calendar.DATE, +1);
 		if (transacao.getDataVencimento().before(Calendar.getInstance()))
 		{
-			transacao.getDataVencimento().add(Calendar.DATE, 0);
+			transacao.getDataVencimento().add(Calendar.DATE, -1);
 			SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy"); //Calendar
 			String dataVencimentoFormatada = format.format(transacao.getDataVencimento().getTime()); //Calendar
 			

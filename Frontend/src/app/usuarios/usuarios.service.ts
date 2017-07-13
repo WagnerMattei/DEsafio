@@ -55,7 +55,7 @@ export class UsuariosService
   //Pegar usuario logado//
   getCurrentUser()
   {
-    return this.http.get(this.url + '/getCurrentUser').map(res => res.json());;
+    return this.http.get(this.url + '/getCurrentUser').map(res => res.json());
   }
 
   //ALTERAR STATUS//

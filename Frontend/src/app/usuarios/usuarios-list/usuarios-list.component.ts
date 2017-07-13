@@ -102,6 +102,7 @@ export class UsuariosListComponent
       this.usuariosService.listarUsuarios(event.page.valueOf() - 1, event.pageSize).subscribe(usuario => 
       { 
         this.usuarios = usuario;
+        console.log(this.usuarios);
         this.size = event.pageSize;
       },  
       erro => 
