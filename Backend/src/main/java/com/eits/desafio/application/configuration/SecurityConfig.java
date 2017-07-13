@@ -3,6 +3,7 @@ package com.eits.desafio.application.configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -29,25 +30,30 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 		/**
 		*
 		*/
-		http.csrf().disable();
+		http.csrf().disable().sessionManagement().maximumSessions(1).expiredUrl("/login");
 		http.headers().frameOptions().disable();
 
+		
+		//form
+		
 		http
 		.authorizeRequests()
 		.anyRequest()
 		.authenticated()
 		.and()
 		.formLogin()
+		.loginPage( "/login" )
+		.loginProcessingUrl( "/authenticate" )
 		.usernameParameter( "email" )
 		.passwordParameter( "senha" )
-		.loginPage( "/autenticacao" )
-		.loginProcessingUrl( "/authenticate" )
 //		.successHandler( authenticationSuccessHandler )
 		.permitAll()
 		.and()
 		.logout()
 		.logoutUrl( "/logout" );
 		
+		
+		//basic auth
 		http
         .authorizeRequests()
         .antMatchers( "/api/**" )
@@ -64,5 +70,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 		auth.userDetailsService(authentication).passwordEncoder(new BCryptPasswordEncoder());
 	}
 	
-
 }

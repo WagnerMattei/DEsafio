@@ -1,0 +1,48 @@
+package domain.service;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.test.context.support.WithUserDetails;
+import org.springframework.test.context.jdbc.Sql;
+
+import com.eits.desafio.domain.entity.Usuario;
+import com.eits.desafio.domain.service.UsuarioService;
+
+import application.config.IntegrationTests;
+import org.junit.Assert;
+
+@Sql("dataset/usuarios.sql")
+public class UsuarioServiceTest extends IntegrationTests
+{
+	@Autowired
+	private UsuarioService usuarioService;
+	
+	@WithUserDetails("wagner.mattei@eits.com.br")
+	@Test
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void insertUsuarioMustPass() 
+	{
+		Usuario user = new Usuario();
+		user.setNome("teste");
+		user.setCpf("00032112396");
+		user.setEmail("sdfasdf@dfdasfasd.com");
+		user.setSenha("1234");
+		user.setConfirmSenha("1234");
+		usuarioService.insert(user);
+
+		/*Assert.assertNotNull( user );
+		Assert.assertNotNull( user.getName() );
+		Assert.assertNotNull( user.getLastName() );
+		Assert.assertNotNull( user.isActive() );
+		Assert.assertNotNull( user.getPermission() );
+		Assert.assertNotNull( user.getSex() );*/
+		
+		Page<Usuario> users = usuarioService.listUsuariosByFilters("teste", 0, 5, "nome", "ASC");
+		Assert.assertEquals(users.getContent().get(0).getNome(), "teste");
+		
+	}
+}

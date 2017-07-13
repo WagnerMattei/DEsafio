@@ -11,7 +11,7 @@ import { Pagina } from "app/Pagina";
 export class UsuariosService 
 {
   headers: Headers;
-  url: String = '/desafio/usuario';
+  url: String = '/desafio/api/usuario';
   constructor(public router: Router, public http: Http) 
   { 
     this.headers = new Headers();

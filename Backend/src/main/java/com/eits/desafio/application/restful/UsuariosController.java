@@ -17,7 +17,7 @@ import com.eits.desafio.domain.service.UsuarioService;
 
 
 @RestController
-@RequestMapping("usuario")
+@RequestMapping("api/usuario")
 public class UsuariosController 
 {
 	@Autowired

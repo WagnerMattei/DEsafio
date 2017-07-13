@@ -1045,7 +1045,7 @@ var UsuariosService = (function () {
     function UsuariosService(router, http) {
         this.router = router;
         this.http = http;
-        this.url = '/desafio/usuario';
+        this.url = '/desafio/api/usuario';
         this.headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["d" /* Headers */]();
         this.headers.append('Content-Type', 'application/json');
     }

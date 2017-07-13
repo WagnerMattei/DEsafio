@@ -1,0 +1,32 @@
+package com.eits.desafio.application.controller;
+
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController 
+{
+	@RequestMapping("/")
+	public String home(){
+		return "dist/index";	
+	}
+
+	@RequestMapping("/login")
+	public String index(@AuthenticationPrincipal User user)
+	{
+		if ( user != null)
+		{
+			return "redirect:/#/user";
+		}
+		return "index";	
+	}
+	
+	@RequestMapping("/erro")
+	public String erro()
+	{
+		return "erro";
+	}
+	
+}

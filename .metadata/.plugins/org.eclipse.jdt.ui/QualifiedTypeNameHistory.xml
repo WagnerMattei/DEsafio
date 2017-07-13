@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.directwebremoting.annotations.Param"/>
 <fullyQualifiedTypeName name="org.directwebremoting.annotations.RemoteMethod"/>
-<fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedEntityGraph"/>
@@ -34,7 +33,6 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty.Access"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.CascadeType"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
@@ -48,4 +46,14 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.annotation.JsonDeserialize"/>
 <fullyQualifiedTypeName name="com.eits.desafio.infraestructure.JsonIgnoreClass"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.annotation.AuthenticationPrincipal"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+<fullyQualifiedTypeName name="javax.activation.DataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="application.config.IntegrationTests"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Usuario"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.repository.IUsuariosRepository"/>
 </qualifiedTypeNameHistroy>

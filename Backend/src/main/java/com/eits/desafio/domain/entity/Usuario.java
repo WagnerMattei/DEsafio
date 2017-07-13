@@ -1,7 +1,9 @@
 package com.eits.desafio.domain.entity;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,17 +21,13 @@ import javax.persistence.Transient;
 import org.directwebremoting.annotations.DataTransferObject;
 import org.hibernate.envers.AuditTable;
 import org.hibernate.envers.Audited;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.util.Converter;
 
 @Entity
 @Table(name = "usuario")
@@ -336,8 +334,9 @@ public class Usuario implements UserDetails
 	@JsonIgnore
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Permissoes> usuarios = new ArrayList<>();
+		usuarios.add(permissoes);
+		return usuarios;
 	}
 	
 	
@@ -393,7 +392,7 @@ public class Usuario implements UserDetails
 	 */
 
 	
-	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
+	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataCadastro", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getUltimoAlterador() 
 	{
 		return ultimoAlterador;
@@ -408,7 +407,7 @@ public class Usuario implements UserDetails
 	 * 
 	 */
 	
-	@JsonIgnoreProperties(value={"cpf", "email", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
+	@JsonIgnoreProperties(value={"cpf", "email", "dataCadastro", "endereco", "celular", "dataAlteracao", "ativo", "ultimoAlterador", "criador", "permissoes"})
 	public Usuario getCriador() 
 	{
 		return criador;

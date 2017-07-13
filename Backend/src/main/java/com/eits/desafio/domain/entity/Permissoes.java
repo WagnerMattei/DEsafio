@@ -10,20 +10,11 @@ public enum Permissoes implements GrantedAuthority
 	 * 
 	 */
 	
-	ADMINISTRADOR("Administrador"),
-	COLABORADOR("Colaborador");
+	ADMINISTRADOR,
+	COLABORADOR;
 	
-	private String descricao;
+
 	
-	Permissoes(String descricao)
-	{
-		this.descricao = descricao;
-	}
-	
-	public String getDescricao()
-	{
-		return descricao;
-	}
 	
 	@Override
 	public String getAuthority()

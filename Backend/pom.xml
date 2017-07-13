@@ -185,6 +185,13 @@
 			<version>3.0.2-RELEASE</version>
 		</dependency>
 		
+		<!-- JSTL -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
 				
 		
 		<!-- FIM DAS DEPENDENCIAS -->
