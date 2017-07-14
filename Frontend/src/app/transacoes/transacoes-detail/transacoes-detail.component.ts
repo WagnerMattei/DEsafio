@@ -35,7 +35,7 @@ export class TransacoesDetailComponent
 
   download(transacao)
   {
-      window.location.assign("/desafio/transacao/downloadFile/" + transacao.id);
+      window.location.assign("/desafio/api/transacao/downloadFile/" + transacao.id);
   }
 
    

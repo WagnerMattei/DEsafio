@@ -8,7 +8,7 @@ import { Pagina } from "app/Pagina";
 export class ContasService 
 {
   headers: Headers;
-  url: String = '/desafio/conta';
+  url: String = '/desafio/api/conta';
   constructor(public http: Http) 
   { 
     this.headers = new Headers();

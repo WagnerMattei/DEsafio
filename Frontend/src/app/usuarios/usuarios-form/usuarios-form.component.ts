@@ -25,6 +25,7 @@ export class UsuariosFormComponent
 {
     usuario: Object = {};
     rodar: boolean;
+    expand: boolean = false;
 
     permissoes =
     [
@@ -85,7 +86,8 @@ export class UsuariosFormComponent
   }
   
   updateUsuarioToSenha(usuario)
-  {
+  {    
+    this.expand = false;
     this.usuariosService.updateUsuarioToSenha(usuario).subscribe(() => 
     {
       this._snackBarService.open('Senha Atualizada com sucesso', 'Sucesso!', {duration: 3000});

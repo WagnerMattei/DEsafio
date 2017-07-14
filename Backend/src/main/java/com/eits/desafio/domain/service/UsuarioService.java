@@ -206,7 +206,15 @@ public class UsuarioService
 		}
 
 		//Seta o usuario alterador
-		usuario.setUltimoAlterador(getCurrent());
+		if (usuario.getId() == (this.getCurrent().getId()))
+		{
+			usuario.setUltimoAlterador(null);
+		}
+		else
+		{
+			usuario.setUltimoAlterador(getCurrent());
+			
+		}
 		
 		//Seta a data de alteração
 		usuario.setDataAlteracao(LocalDate.now());

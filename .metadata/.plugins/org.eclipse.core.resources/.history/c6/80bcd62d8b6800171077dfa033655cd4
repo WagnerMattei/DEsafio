@@ -1,0 +1,178 @@
+package com.eits.desafio.application.restful;
+
+
+
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.eits.desafio.domain.entity.Transacao;
+import com.eits.desafio.domain.service.TransacaoService;
+
+
+
+@RestController
+@RequestMapping("transacao")
+public class TransacoesController 
+{
+
+	private static final String APPLICATION_PDF = "application/pdf";
+
+	
+
+	@Autowired
+	private TransacaoService transacaoService;
+	
+	/**
+	 * 
+	 * @param transacao
+	 * @return
+	 * INSERT
+	 */
+	
+	
+	@RequestMapping(value = "/new", method = RequestMethod.POST)
+	public ResponseEntity<String> insert(@RequestBody Transacao transacao)
+	{
+		return transacaoService.insert(transacao);
+	}
+	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * UPDATE TRANSACAO TO EFETIVADO
+	 * 
+	 */
+	@CrossOrigin
+	@RequestMapping(value = "/efetivar/{id}", method = RequestMethod.PATCH)
+	public ResponseEntity<String> updateTransacaoToEfetivado(@PathVariable long id)
+	{
+		return transacaoService.updateTransacaoToEfetivado(transacaoService.findById(id));
+	}
+	
+	/**
+	 * 
+	 * @param page
+	 * @param size
+	 * @return
+	 * LIST
+	 */
+	@RequestMapping(value = "/pag/{page}/{size}", method = RequestMethod.GET)
+	public Page<Transacao> list(@PathVariable int page, @PathVariable int size)
+	{
+		
+		String property = "dataVencimento";
+		String order = "ASC";
+		Page<Transacao> transacao = transacaoService.list(page, size, property, order);
+		return transacao;
+	}
+	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * FIND BY ID 
+	 */
+	@CrossOrigin
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public Transacao findById(@PathVariable("id") long id)
+	{	
+		return transacaoService.findById(id);
+	}
+	
+	/**
+	 * 
+	 * @param id
+	 * 
+	 * REMOVE
+	 */
+	@CrossOrigin
+	@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+	public void remove(@PathVariable("id") Long id)
+	{
+		transacaoService.remove(id);
+	}
+	
+	
+	/**
+	 * 
+	 * @param transacao
+	 * @return
+	 * UPDATE
+	 */
+	@CrossOrigin
+	@RequestMapping(value = "/edit", method = RequestMethod.PUT)
+	public ResponseEntity<String> update(@RequestBody Transacao transacao)
+	{
+		return transacaoService.update(transacao);
+	}
+	
+	/**
+	 * 
+	 * @param filter
+	 * @param page
+	 * @param size
+	 * @return
+	 * LIST TRANSACOES BY FILTERS
+	 */
+	@RequestMapping(value = "/filter/{filter}/{page}/{size}", method = RequestMethod.GET)
+	public Page<Transacao> listTransacoesByFilters(@PathVariable("filter") String filter,
+											    @PathVariable("page") int page,
+											    @PathVariable("size") int size)
+	{ 
+		String property = "dataVencimento";
+		String order = "ASC";
+		Page<Transacao> transacao = transacaoService.listTransacoesByFilter(filter, page, size, property, order);
+		return transacao;
+	}
+	
+
+	@CrossOrigin
+	@RequestMapping(value = "/uploadFile/{id}", method = RequestMethod.POST)
+	public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file, @PathVariable Long id)
+	{
+		return transacaoService.uploadFile(file, id);
+    }
+	
+	/**
+	 * 
+	 * @param response
+	 * @param id
+	 * @throws IOException
+	 */
+    @RequestMapping(value = "/downloadFile/{id}", method = RequestMethod.GET, produces = APPLICATION_PDF)
+    public void downloadFile(HttpServletResponse response, @PathVariable Long id) throws IOException 
+    {
+        transacaoService.downloadFile(response, id);
+    }
+    
+    @CrossOrigin
+	@RequestMapping(value = "/excluirArquivo/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<String> ExcluirArquivo(@PathVariable long id)
+	{
+    	System.out.println(id);
+		return transacaoService.excluirArquivo(transacaoService.findById(id));
+	}
+
+	
+	
+	
+
+
+}

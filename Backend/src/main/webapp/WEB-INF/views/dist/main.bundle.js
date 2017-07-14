@@ -392,7 +392,7 @@ var TransacoesDetailComponent = (function () {
         }, function (erro) { return console.log(erro); });
     }
     TransacoesDetailComponent.prototype.download = function (transacao) {
-        window.location.assign("/desafio/transacao/downloadFile/" + transacao.id);
+        window.location.assign("/desafio/api/transacao/downloadFile/" + transacao.id);
     };
     return TransacoesDetailComponent;
 }());
@@ -808,6 +808,7 @@ var UsuariosFormComponent = (function () {
         this.usuariosService = usuariosService;
         this.router = router;
         this.usuario = {};
+        this.expand = false;
         this.permissoes = [
             {
                 value: 'ADMINISTRADOR', viewValue: 'Administrador'
@@ -852,6 +853,7 @@ var UsuariosFormComponent = (function () {
     };
     UsuariosFormComponent.prototype.updateUsuarioToSenha = function (usuario) {
         var _this = this;
+        this.expand = false;
         this.usuariosService.updateUsuarioToSenha(usuario).subscribe(function () {
             _this._snackBarService.open('Senha Atualizada com sucesso', 'Sucesso!', { duration: 3000 });
         }, function (erro) {
@@ -1702,7 +1704,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ContasService = (function () {
     function ContasService(http) {
         this.http = http;
-        this.url = '/desafio/conta';
+        this.url = '/desafio/api/conta';
         this.headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["d" /* Headers */]();
         this.headers.append('Content-Type', 'application/json');
     }
@@ -1768,7 +1770,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TransacoesService = (function () {
     function TransacoesService(http) {
         this.http = http;
-        this.url = '/desafio/transacao';
+        this.url = '/desafio/api/transacao';
         this.headers = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["d" /* Headers */]();
         this.headersFile = new __WEBPACK_IMPORTED_MODULE_0__angular_http__["d" /* Headers */]();
         this.headers.append('Content-Type', 'application/json');

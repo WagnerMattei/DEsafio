@@ -16,7 +16,7 @@ import com.eits.desafio.domain.service.ContaService;
 
 
 @RestController
-@RequestMapping("conta")
+@RequestMapping("api/conta")
 public class ContasController 
 {
 	@Autowired

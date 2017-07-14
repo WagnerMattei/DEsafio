@@ -26,7 +26,7 @@ import com.eits.desafio.domain.service.TransacaoService;
 
 
 @RestController
-@RequestMapping("transacao")
+@RequestMapping("api/transacao")
 public class TransacoesController 
 {
 

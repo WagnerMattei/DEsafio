@@ -53,7 +53,7 @@
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="application.config.IntegrationTests"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Usuario"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="com.eits.desafio.domain.repository.IUsuariosRepository"/>
+<fullyQualifiedTypeName name="com.eits.desafio.domain.entity.Usuario"/>
 </qualifiedTypeNameHistroy>

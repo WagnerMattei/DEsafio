@@ -8340,3 +8340,343 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2017-07-13 16:58:01,251 [Worker-185] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-07-13 16:58:01,251 [Worker-185] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-13 16:58:01,251 [Worker-185] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:05:47,741 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:05:47,754 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-13 22:05:47,778 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:05:47,778 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:24:09,945 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:24:09,951 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:24:09,953 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:24:09,953 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:26:56,551 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:26:56,551 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:26:56,553 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:26:56,553 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:35:38,033 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:35:38,033 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:35:38,035 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:35:38,036 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:37:17,366 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:37:17,370 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-13 22:37:17,373 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:37:17,373 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:42:40,627 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:42:40,627 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:42:40,629 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:42:40,629 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:47:54,277 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:47:54,277 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:47:54,279 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:47:54,279 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 22:49:10,454 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:49:10,455 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 22:49:10,457 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 22:49:10,457 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:18:56,675 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:18:56,676 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:18:56,678 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:18:56,678 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:25:27,369 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:25:27,369 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:25:27,371 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:25:27,371 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:26:17,546 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:26:17,547 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:26:17,549 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:26:17,549 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:26:44,423 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:26:44,424 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:26:44,425 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:26:44,425 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:27:29,164 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:27:29,164 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:27:29,166 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:27:29,166 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:28:08,452 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:28:08,452 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:28:08,454 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:28:08,454 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:29:13,867 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:29:13,867 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:29:13,869 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:29:13,870 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:31:13,398 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:31:13,399 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:31:13,404 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:31:13,404 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:31:46,213 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:31:46,213 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:31:46,215 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:31:46,215 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:34:07,181 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:34:07,181 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:34:07,182 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:34:07,183 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:34:56,589 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:34:56,589 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:34:56,591 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:34:56,591 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:35:25,798 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:35:25,798 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:35:25,800 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:35:25,800 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:38:43,409 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:38:43,410 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:38:43,411 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:38:43,411 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-13 23:40:26,039 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:40:26,039 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-13 23:40:26,042 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-13 23:40:26,042 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:51:38,294 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:51:38,295 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 08:51:38,296 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:51:38,297 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:54:24,154 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:54:24,155 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 08:54:24,158 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:54:24,172 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:54:32,440 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:54:32,441 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 08:54:32,448 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:54:32,448 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:57:58,105 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:57:58,110 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 08:57:58,112 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:57:58,112 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:57:59,842 [Worker-276] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 08:58:01,741 [Worker-276] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 08:58:04,457 [Worker-276] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 08:58:04,464 [Worker-276] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 08:58:04,473 [Worker-276] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 08:58:07,045 [Worker-276] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 08:58:07,064 [Worker-276] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2017-07-14 08:58:36,026 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:58:36,027 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 08:58:36,048 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:58:36,048 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:58:36,048 [Worker-276] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 08:58:36,049 [Worker-276] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 08:58:36,058 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:59:31,042 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:59:31,046 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 08:59:31,048 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:59:31,054 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 08:59:34,604 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:59:34,605 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 08:59:34,606 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 08:59:34,606 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:17:42,112 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:17:42,112 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:17:42,114 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:17:42,114 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:30:13,872 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:30:13,872 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 09:30:13,874 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:30:13,874 [Worker-300] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:30:17,039 [Worker-302] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 09:30:18,410 [Worker-302] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 09:30:21,186 [Worker-302] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 09:30:21,187 [Worker-302] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 09:30:21,195 [Worker-302] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 09:30:22,351 [Worker-302] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 09:30:22,355 [Worker-302] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2017-07-14 09:30:44,617 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:30:44,622 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:30:44,657 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:30:44,657 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:30:44,657 [Worker-301] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 09:30:44,657 [Worker-301] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 09:30:44,676 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:34:34,579 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:34:34,581 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 09:34:34,582 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:34:34,582 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:34:38,889 [Worker-308] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 09:34:40,202 [Worker-308] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 09:34:41,771 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 09:34:41,771 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 09:34:41,772 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 09:34:42,412 [Worker-308] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 09:34:42,416 [Worker-308] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2017-07-14 09:34:56,815 [Worker-303] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:34:56,816 [Worker-303] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:34:56,832 [Worker-303] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:34:56,833 [Worker-303] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:34:56,833 [Worker-303] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 09:34:56,833 [Worker-303] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 09:34:56,838 [Worker-303] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:39:09,888 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:39:09,890 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 09:39:09,891 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:39:09,892 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:39:12,469 [Worker-310] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 09:39:13,480 [Worker-310] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 09:39:15,799 [Worker-310] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 09:39:15,800 [Worker-310] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 09:39:15,800 [Worker-310] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 09:39:16,580 [Worker-310] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 09:39:16,597 [Worker-310] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-07-14 09:39:25,806 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:39:25,807 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:39:25,817 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:39:25,818 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:39:25,818 [Worker-310] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 09:39:25,818 [Worker-310] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 09:39:25,822 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:41:10,429 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:41:10,432 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 09:41:10,434 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:41:10,434 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:41:11,845 [Worker-308] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 09:41:12,902 [Worker-308] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 09:41:15,351 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 09:41:15,351 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 09:41:15,391 [Worker-308] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 09:41:16,348 [Worker-308] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 09:41:16,359 [Worker-308] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-07-14 09:41:25,645 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:41:25,647 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:41:25,655 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:41:25,656 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:41:25,656 [Worker-316] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 09:41:25,656 [Worker-316] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 09:41:25,660 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:54:14,707 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:54:14,710 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:54:14,712 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:54:14,712 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:54:26,388 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:54:26,389 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:54:26,390 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:54:26,390 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 09:57:08,308 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:57:08,308 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 09:57:08,309 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 09:57:08,309 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:14:01,986 [Worker-333] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:14:01,987 [Worker-333] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:14:01,988 [Worker-333] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:14:01,988 [Worker-333] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:14:03,373 [Worker-336] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 10:14:04,958 [Worker-336] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 10:14:06,711 [Worker-336] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 10:14:06,711 [Worker-336] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 10:14:06,715 [Worker-336] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 10:14:07,938 [Worker-336] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 10:14:07,952 [Worker-336] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-07-14 10:14:15,634 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:14:15,635 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 10:14:15,643 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:14:15,644 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:14:15,644 [Worker-331] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 10:14:15,644 [Worker-331] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 10:14:15,648 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:20:29,296 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:20:29,302 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:20:29,303 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:20:29,303 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:20:33,115 [Worker-347] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 10:20:33,906 [Worker-347] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 10:20:35,588 [Worker-347] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 10:20:35,588 [Worker-347] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 10:20:35,589 [Worker-347] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 10:20:36,037 [Worker-347] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 10:20:36,041 [Worker-347] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-07-14 10:20:41,789 [Worker-346] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:20:41,790 [Worker-346] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 10:20:41,798 [Worker-346] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:20:41,798 [Worker-346] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:20:41,798 [Worker-346] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 10:20:41,798 [Worker-346] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 10:20:41,801 [Worker-346] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:22:48,886 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:22:48,888 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:22:48,890 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:22:48,890 [Worker-343] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:22:51,591 [Worker-343] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-14 10:22:52,568 [Worker-343] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eits:desafio:1.0.0-SNAPSHOT @ /home/eits/Área de Trabalho/Desafio/Backend/pom.xml.
+2017-07-14 10:22:54,482 [Worker-343] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/main/java
+2017-07-14 10:22:54,484 [Worker-343] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Backend/src/main/resources
+2017-07-14 10:22:54,485 [Worker-343] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Backend/src/test/java
+2017-07-14 10:22:55,350 [Worker-343] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Backend
+2017-07-14 10:22:55,376 [Worker-343] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2017-07-14 10:23:03,066 [Worker-353] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:23:03,068 [Worker-353] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-07-14 10:23:03,081 [Worker-353] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:23:03,081 [Worker-353] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:23:03,081 [Worker-353] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Backend
+2017-07-14 10:23:03,081 [Worker-353] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Backend
+2017-07-14 10:23:03,085 [Worker-353] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:27:18,066 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:27:18,069 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:27:18,070 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:27:18,071 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:29:36,566 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:29:36,566 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:29:36,567 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:29:36,567 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:32:14,668 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:32:14,668 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:32:14,669 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:32:14,669 [Worker-355] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:32:42,839 [Worker-354] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:32:42,839 [Worker-354] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:32:42,841 [Worker-354] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:32:42,841 [Worker-354] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:35:24,894 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:24,894 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:35:24,896 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:24,896 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:35:33,393 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:33,394 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:35:33,395 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:33,396 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:35:42,859 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:42,859 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:35:42,860 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:42,860 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:35:45,259 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:45,260 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:35:45,261 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:35:45,261 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:38:29,074 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:29,075 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:38:29,076 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:29,076 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:38:35,222 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:35,223 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:38:35,224 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:35,224 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:38:59,627 [Worker-357] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:59,627 [Worker-357] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:38:59,628 [Worker-357] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:38:59,629 [Worker-357] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:43:30,185 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:43:30,185 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:43:30,187 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:43:30,188 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:44:17,238 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:44:17,239 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:44:17,240 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:44:17,240 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:45:16,153 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:45:16,154 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:45:16,155 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:45:16,155 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:48:42,268 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:48:42,269 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-14 10:48:42,272 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:48:42,272 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:48:55,762 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:48:55,763 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-14 10:48:55,764 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:48:55,765 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:50:30,441 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:50:30,441 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:50:30,442 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:50:30,442 [Worker-348] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:51:55,066 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:51:55,066 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 10:51:55,067 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:51:55,067 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources

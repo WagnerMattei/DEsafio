@@ -212,7 +212,6 @@ public class TransacaoService
 		transacao.getDataVencimento().add(Calendar.DATE, +1);
 		if (transacao.getDataVencimento().before(Calendar.getInstance()))
 		{
-			transacao.getDataVencimento().add(Calendar.DATE, -1);
 			SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy"); //Calendar
 			String dataVencimentoFormatada = format.format(transacao.getDataVencimento().getTime()); //Calendar
 			
@@ -232,7 +231,7 @@ public class TransacaoService
 			
 			//envia o mesmo email para o efetivador caso nao seja a mesma pessoa que o criador,
 			//para evitar de mandar email repetido
-			if (!transacao.getCriador().equals(transacao.getEfetivador()))
+			if (!(transacao.getCriador().getId() == (transacao.getEfetivador().getId())))
 			{
 				destino = transacao.getEfetivador().getEmail();
 				mailer.send(destino, email, assunto);

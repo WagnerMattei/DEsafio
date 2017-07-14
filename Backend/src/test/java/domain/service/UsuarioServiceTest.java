@@ -1,5 +1,10 @@
 package domain.service;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import java.sql.SQLIntegrityConstraintViolationException;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,38 +25,94 @@ public class UsuarioServiceTest extends IntegrationTests
 	private UsuarioService usuarioService;
 	
 	@Autowired
-	private IUsuariosRepository usuarios;
+	private IUsuariosRepository usuarioRepository;
 	
 	@WithUserDetails("wagner.mattei@eits.com.br")
 	@Test
 	@Sql({
 		"dataset/usuarios.sql"
 	})
+	
+	//teste de inserir usuario
 	public void insertUsuarioMustPass() 
 	{
-		Usuario user = new Usuario();
-		user.setNome("teste");
-		user.setCpf("00032112396");
-		user.setEmail("sdfasdf@dfdasfasd.com");
-		user.setSenha("1234");
-		user.setConfirmSenha("1234");
-		usuarioService.insert(user);
-		
-		usuarios.delete(new Long (1));
-		
-		Usuario usuario = usuarioService.findById(new Long(1));
-		
-		Assert.assertTrue( usuario == null );
-		
-		/*Assert.assertNotNull( user );
-		Assert.assertNotNull( user.getName() );
-		Assert.assertNotNull( user.getLastName() );
-		Assert.assertNotNull( user.isActive() );
-		Assert.assertNotNull( user.getPermission() );
-		Assert.assertNotNull( user.getSex() );*/
+		Usuario usuario = new Usuario();
+		usuario.setNome("teste");
+		usuario.setCpf("00032112396");
+		usuario.setEmail("sdfasdf@dfdasfasd.com");
+		usuario.setSenha("1234");
+		usuario.setConfirmSenha("1234");
+		usuarioService.insert(usuario);
 		
 		Page<Usuario> users = usuarioService.listUsuariosByFilters("shdfsadhf", 0, 5, "nome", "ASC");
 		Assert.assertEquals(users.getContent().get(0).getNome(), "shdfsadhf");
+	}
+	
+	//teste de edtar usuario
+	@WithUserDetails("wagner.mattei@eits.com.br")
+	@Test
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void updateUsuarioMustPass()
+	{
+		Usuario usuario = usuarioRepository.findOne(new Long(2));
+		usuario.setNome("Wagner");
+		usuarioService.update(usuario);
+				
+	}
+	
+	//teste de finById
+	@Test
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void finByIdMustPass()
+	{
+		Usuario usuario = usuarioService.findById(new Long(2));
+		assertNotNull(usuario);
+	}
+	
+	//teste de updateUsuarioToStatus
+	@WithUserDetails("wagner.mattei@eits.com.br")
+	@Test
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void updateUsuarioToStatusMustPass()
+	{
+		Usuario usuario = usuarioRepository.findOne(new Long(2));
+		usuarioService.updateUsuarioToStatus(usuario);
+	}
+	
+	//casos MustFail
+	@Test()
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void findByIdMustFail()
+	{
+		Usuario usuario = usuarioService.findById(new Long(8));
+		assertNull(usuario);
 		
 	}
+	
+	//teste de insertMustFail
+	@Test(expected = SQLIntegrityConstraintViolationException.class)
+	@Sql({
+		"dataset/usuarios.sql"
+	})
+	public void insertMustFail()
+	{
+		Usuario usuario = new Usuario();
+		usuario.setNome("teste");
+		usuario.setCpf("02542322058");
+		usuario.setEmail("wagner.mattei@eits.com.br");
+		usuario.setSenha("1234");
+		usuario.setConfirmSenha("1234");
+		usuarioService.insert(usuario);
+	}
+	
+	
+	
 }
