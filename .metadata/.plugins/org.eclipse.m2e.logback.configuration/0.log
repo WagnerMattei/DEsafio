@@ -8680,3 +8680,7 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2017-07-14 10:51:55,066 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-07-14 10:51:55,067 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-07-14 10:51:55,067 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
+2017-07-14 10:56:58,926 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:56:58,938 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-07-14 10:56:58,946 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-07-14 10:56:58,946 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/eits/Área de Trabalho/Desafio/Backend/src/test/resources
